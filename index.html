@@ -47,15 +47,13 @@
         <ul class="we-create animated fadeInUp delay-1s">
         	<li>We are a digital agency that loves crafting beautiful websites.</li>
         </ul>
-        <ul class="social">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
+          <ul class="social-link">
+                	<li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
+                    <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
+                    <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
+                    <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
+                    <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
+                </ul>
             <a class="link animated fadeInUp delay-1s" href="#">Get Started</a>
     </div>
 </div>
@@ -359,13 +357,9 @@ we were well fed and drunk all the time!</p>
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Copyright © 2016 | <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</span>
+        <span class="copyright">Copyright © 2016 | <a href="https://www.facebook.com/k10andsystems">by K10 & Systems</a> </span>
     </div>
-    <!-- 
-        All links in the footer should remain intact. 
-        Licenseing information is available at: http://bootstraptaste.com/license/
-        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Knight
-    -->
+    
 </footer>
 
 
@@ -449,8 +443,7 @@ $(window).load(function(){
         $(this).addClass('current');
  
         var selector = $(this).attr('data-filter');
-        $container.isotope({
-			
+        $container.isotope({ 
             filter: selector,
          });
          return false;
