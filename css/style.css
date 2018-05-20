@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
  
 /* CSS Document */
 
@@ -93,11 +93,12 @@ p{
 .header{
 	text-align:center;
 	background:url(../img/pw_maze_black_2X.jpg) left top repeat;
-	padding:100px 0; /*280px*/
+	padding:20px 0; /*280px*/
 }
 .logo{
 	width:130px;
-	margin:0 auto 35px;
+	margin:0 auto 15px;
+    border-radius: 10px;
 }
 .header h1{
 	font-family: 'Montserrat',sans-serif;
@@ -110,7 +111,7 @@ p{
 
 .we-create{
 	padding:0;
-	margin:35px 0 55px;
+	margin:15px 0 35px;
 }
 .wp-pic{
 	margin-bottom:20px;
@@ -208,7 +209,7 @@ color: #fff;
 }
 
 .main-section{
-	padding:90px 0 110px;
+	padding:80px 0 100px;
 }
 
 
@@ -833,3 +834,6 @@ border: 2px solid #fff;
 }
 
 
+.logo-img{
+    border-radius:10px;
+}
