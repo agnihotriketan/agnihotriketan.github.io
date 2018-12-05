@@ -55,6 +55,17 @@
         <script src="js/html5element.js"></script>
     <![endif]-->
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.header').ripples({
+                resolution: 256,
+                perturbance: 0.04
+            });
+
+        });
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
