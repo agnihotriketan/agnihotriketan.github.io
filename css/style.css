@@ -265,7 +265,7 @@ p {
 }
 
 service-list-col2 h3 {
-    font-size: 1.7em;
+    font-size: 1.7em !important;
 }
 
 .main-section.alabaster {
