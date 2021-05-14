@@ -264,7 +264,7 @@ p {
     overflow: hidden;
 }
 
-service-list-col2 h3 {
+.service-list-col2 h3 {
     font-size: 1.7em !important;
 }
 
