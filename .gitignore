@@ -63,3 +63,6 @@ typings/
 
 build/
 .history/
+/.vs/agnihotriketan.github.io/v16
+/.vs/agnihotriketan.github.io/config/applicationhost.config
+/.vs/slnx.sqlite

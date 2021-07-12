@@ -264,9 +264,9 @@ p {
     overflow: hidden;
 }
 
-.service-list-col2 h3 {
-    font-size: 1.3em !important;
-}
+    .service-list-col2 h3 {
+        font-size: 1.3em !important;
+    }
 
 .main-section.alabaster {
     background: #E7E7E7;
@@ -950,3 +950,13 @@ img {
 .logo-img {
     border-radius: 10px;
 }
+
+
+.zoom {
+}
+
+    .zoom:hover {
+        transition: transform .5s ease;
+        filter: brightness(125%);
+        transform: scale(1.25) translateY(-30%);
+    }
