@@ -178,14 +178,14 @@ p {
 
     .link:hover {
         text-decoration: none;
-        color: #0d90e5 !important;
-        background: #fff;
+        color: #fff !important;
+        background: #0d90e5;
     }
 
     .link:active, .link:focus {
-        background: #0d90e5;
+        background: #fff;
         text-decoration: none;
-        color: #fff !important;
+        color: #0d90e5 !important;
     }
 
 /* Navigation
