@@ -184,8 +184,8 @@ p {
 
     .link:active, .link:focus {
         background: #0d90e5;
-        color: #fff !important;
         text-decoration: none;
+        color: #fff !important;
     }
 
 /* Navigation
