@@ -958,5 +958,5 @@ img {
     .zoom:hover {
         transition: transform .5s ease;
         filter: brightness(125%);
-        transform: scale(1.25) translateY(-30%);
+        transform: scale(1.8) translateY(-30%);
     }
