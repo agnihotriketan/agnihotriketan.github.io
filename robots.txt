@@ -1,0 +1,72 @@
+# Robots.txt for k10.in (Ketan Agnihotri Portfolio)
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /fonts/
+
+# Disallow certain files and directories
+Disallow: /internal/
+Disallow: /App_Data/
+Disallow: *.webinfo
+Disallow: *.pubxml
+Disallow: *.sln
+
+# Disallow access to development and configuration files
+Disallow: /vwd.webinfo
+Disallow: /website.publishproj
+Disallow: /agnihotriketan.github.io.sln
+
+# Allow sitemap
+Sitemap: https://k10.in/sitemap.xml
+
+# Crawl delay (optional - be respectful to server resources)
+Crawl-delay: 1
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Social media and SEO bots
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: SkypeUriPreview
+Allow: /
+
+# Block spam bots and scrapers
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Note: This robots.txt is optimized for Ketan Agnihotri's professional portfolio
+# Last updated: October 24, 2025
