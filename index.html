@@ -448,16 +448,18 @@
 
     <!-- Modern Header Background Styling -->
     <style>
-      /* Modern gradient background with animated particles effect */
+      /* Modern gradient background matching your brand colors (#0d90e5 to #ffffff) */
       .header {
         text-align: center;
         background: linear-gradient(
           135deg,
-          #667eea 0%,
-          #764ba2 25%,
-          #f093fb 50%,
-          #4facfe 75%,
-          #00f2fe 100%
+          #0d90e5 0%,
+          #1a9ef0 20%,
+          #2eaaff 40%,
+          #5ac8ff 60%,
+          #8fddff 80%,
+          #d4f1ff 90%,
+          #ffffff 100%
         );
         background-size: 400% 400%;
         animation: gradientShift 15s ease infinite;
@@ -608,6 +610,106 @@
         position: relative;
         z-index: 1;
       }
+
+      /* Modern About Me Section Styling - Left-aligned, readable, clean */
+      .about-me-section {
+        text-align: left !important;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .about-me-section h2 {
+        color: white !important;
+        font-size: 28px !important;
+        margin-bottom: 20px !important;
+        font-weight: 600 !important;
+        text-align: left !important;
+        border-left: 4px solid #0d90e5;
+        padding-left: 15px;
+        letter-spacing: 0.5px;
+      }
+
+      .about-me-section p {
+        color: rgba(255, 255, 255, 0.95) !important;
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+        margin-bottom: 15px !important;
+        text-align: left !important;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .about-me-section p::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 8px;
+        height: 8px;
+        background: linear-gradient(135deg, #0d90e5, #ffffff);
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(13, 144, 229, 0.6);
+      }
+
+      .about-me-section a {
+        color: #0d90e5 !important;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
+      }
+
+      .about-me-section a:hover {
+        color: #ffffff !important;
+        border-bottom: 2px solid #ffffff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+
+      /* Card-style container for better readability */
+      .about-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .about-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      /* Button styling with your brand gradient */
+      .link {
+        background: linear-gradient(135deg, #0d90e5 0%, #5ac8ff 100%) !important;
+        color: white !important;
+        padding: 12px 28px !important;
+        border-radius: 8px !important;
+        text-decoration: none !important;
+        display: inline-block !important;
+        margin: 10px 10px 10px 0 !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+        border: 2px solid transparent !important;
+        box-shadow: 0 4px 15px rgba(13, 144, 229, 0.3) !important;
+      }
+
+      .link:hover {
+        background: linear-gradient(135deg, #ffffff 0%, #e0f7ff 100%) !important;
+        color: #0d90e5 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4) !important;
+        border: 2px solid #0d90e5 !important;
+      }
+
+      .link i {
+        margin-right: 8px;
+      }
     </style>
   </head>
   <body>
@@ -694,53 +796,48 @@
             </li>
           </ul>
           <div class="row">
-            <div
-              class="col-lg-9 col-sm-9 wow fadeInLeft delay-05s"
-              style="color: white; font-size: 16px"
-            >
-              <h2 style="color: white; font-size: 20px; margin-bottom: 15px">🧠 About Me</h2>
-              <p>
-                🔑 Senior Full Stack Engineer at National Air Cargo (NAC), Dubai with 13+ years of
-                global software development experience
-              </p>
-              <p>
-                🧩 Ex-SDE2 at Microsoft IDC, specializing in enterprise-scale applications using
-                React, .NET Core, Azure, and Microservices
-              </p>
-              <p>
-                🌱 Currently exploring SRE practices, Docker, and Kubernetes for cloud-native
-                applications
-              </p>
-              <p>
-                🔭 Expert in: ReactJS, React Native, TypeScript, Azure OpenAI, .NET 8,
-                Microservices, Micro-frontends, Event-Driven Architecture
-              </p>
-              <p>
-                👯 Open to collaborate on ReactJS, .NET Core, and Azure projects - Available for
-                consulting and freelance opportunities
-              </p>
-              <p>
-                🤖 Passionate about AI & ML integration, building future-ready scalable solutions
-                for businesses worldwide
-              </p>
-              <p>
-                ❤️ Developer by profession, humanitarian at heart – Supporting Dayasagar Trust for
-                17+ years, giving back to the community
-              </p>
-              <p>
-                📫 Reach me: <a href="https://k10.in" style="color: #ffd700">k10.in</a> |
-                <a href="https://linktr.ee/agnihotriketan" style="color: #ffd700"
-                  >linktr.ee/agnihotriketan</a
-                >
-                |
-                <a href="https://www.linkedin.com/in/ketanagnihotri/" style="color: #ffd700"
-                  >LinkedIn</a
-                >
-              </p>
-              <p>
-                ⚡ Fun fact: Always hungry for challenges — 6 companies in 13+ years, constantly
-                learning and evolving
-              </p>
+            <div class="col-lg-9 col-sm-9 wow fadeInLeft delay-05s">
+              <div class="about-card about-me-section">
+                <h2>🧠 About Me</h2>
+                <p>
+                  🔑 Senior Full Stack Engineer at National Air Cargo (NAC), Dubai with 13+ years of
+                  global software development experience
+                </p>
+                <p>
+                  🧩 Ex-SDE2 at Microsoft IDC, specializing in enterprise-scale applications using
+                  React, .NET Core, Azure, and Microservices
+                </p>
+                <p>
+                  🌱 Currently exploring SRE practices, Docker, and Kubernetes for cloud-native
+                  applications
+                </p>
+                <p>
+                  🔭 Expert in: ReactJS, React Native, TypeScript, Azure OpenAI, .NET 8,
+                  Microservices, Micro-frontends, Event-Driven Architecture
+                </p>
+                <p>
+                  👯 Open to collaborate on ReactJS, .NET Core, and Azure projects - Available for
+                  consulting and freelance opportunities
+                </p>
+                <p>
+                  🤖 Passionate about AI & ML integration, building future-ready scalable solutions
+                  for businesses worldwide
+                </p>
+                <p>
+                  ❤️ Developer by profession, humanitarian at heart – Supporting Dayasagar Trust for
+                  17+ years, giving back to the community
+                </p>
+                <p>
+                  📫 Reach me: <a href="https://k10.in">k10.in</a> |
+                  <a href="https://linktr.ee/agnihotriketan">linktr.ee/agnihotriketan</a>
+                  |
+                  <a href="https://www.linkedin.com/in/ketanagnihotri/">LinkedIn</a>
+                </p>
+                <p>
+                  ⚡ Fun fact: Always hungry for challenges — 6 companies in 13+ years, constantly
+                  learning and evolving
+                </p>
+              </div>
               <br />
               <a
                 class="link animated fadeInUp delay-1s"
