@@ -981,70 +981,97 @@
     <section class="main-section alabaster" id="Experience">
       <div class="container">
         <h2>Professional Experience - 13+ Years</h2>
-        <h6>What I did & where ?</h6>
-        <div class="row">
-          <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> National Air Cargo</h3>
-                <p>Working as Fullstack SDE from 14th July 2025 to till date</p>
+        <h6>My Career Journey</h6>
+        
+        <!-- Horizontal Timeline -->
+        <div class="timeline-container">
+          <div class="timeline-wrapper">
+            
+            <!-- Timeline Item 1 - Current -->
+            <div class="timeline-item current">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Jul 2025 - Present</div>
+                <h3><i class="fa fa-building"></i> National Air Cargo</h3>
+                <p class="timeline-role">Fullstack SDE</p>
+                <p class="timeline-location">Dubai, UAE</p>
               </div>
             </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-microsoft"></i> Microsoft (IDC)</h3>
-                <p>Working as SDE 2 from 8th Jan 2018 to July 2025</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Deloitte USI</h3>
-                <p>
-                  Worked as Technology Consultant from 20th Mar 2017 to Dec 17
-                </p>
-              </div>
-            </div>
-            <div class="service-list">
-              <!--<div class="service-list-col1">
-                          <i class="fa-paw"></i>
-                        </div>-->
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Tavisca</h3>
-                <p>
-                  Worked as software developer from 3rd Aug 2015 to 24 Feb 2017
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Saviant Consulting</h3>
-                <p>
-                  Worked as software developer from 7th May Aug 2014 to July
-                  2015
-                </p>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Jan 2018 - Jul 2025</div>
+                <h3><i class="fa fa-windows"></i> Microsoft IDC</h3>
+                <p class="timeline-role">SDE 2</p>
+                <p class="timeline-location">Hyderabad, India</p>
               </div>
             </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Execula</h3>
-                <p>
-                  Worked as MVC & Azure consultant from Oct 2013 to April 2014
-                </p>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Mar - Dec 2017</div>
+                <h3><i class="fa fa-building"></i> Deloitte USI</h3>
+                <p class="timeline-role">Technology Consultant</p>
+                <p class="timeline-location">India</p>
               </div>
             </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Innovatus</h3>
-                <p>
-                  Worked as software developer from 1st July 2012 to Oct 2013
-                </p>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Aug 2015 - Feb 2017</div>
+                <h3><i class="fa fa-plane"></i> Tavisca</h3>
+                <p class="timeline-role">Software Developer</p>
+                <p class="timeline-location">Pune, India</p>
               </div>
             </div>
-          </div> 
+
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">May 2014 - Jul 2015</div>
+                <h3><i class="fa fa-code"></i> Saviant Consulting</h3>
+                <p class="timeline-role">Software Developer</p>
+                <p class="timeline-location">Pune, India</p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 6 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Oct 2013 - Apr 2014</div>
+                <h3><i class="fa fa-cloud"></i> Execula</h3>
+                <p class="timeline-role">MVC & Azure Consultant</p>
+                <p class="timeline-location">Pune, India</p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 7 - Start -->
+            <div class="timeline-item start">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Jul 2012 - Oct 2013</div>
+                <h3><i class="fa fa-rocket"></i> Innovatus</h3>
+                <p class="timeline-role">Software Developer</p>
+                <p class="timeline-location">Pune, India</p>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+        <!-- Scroll Hint -->
+        <div class="timeline-scroll-hint">
+          <i class="fa fa-long-arrow-right"></i> Scroll horizontally to explore timeline
+        </div>
+
       </div>
     </section>
 
@@ -1380,7 +1407,7 @@
             .stop()
             .animate(
               {
-                scrollTop: $($anchor.attr("href")).offset().top - 102,
+                scrollTop: $($anchor.attr("href")).offset().top - 60,
               },
               1500,
               "easeInOutExpo"
