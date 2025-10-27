@@ -1,0 +1,989 @@
+/* ========================================
+   Custom Styles for Ketan Agnihotri Portfolio
+   Common styles used across index.html and services.html
+   ======================================== */
+
+/* ========================================
+   HOME PAGE STYLES (index.html)
+   ======================================== */
+
+/* Modern gradient background matching brand colors (#0d90e5 to #ffffff) */
+.header { 
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;  
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 60px 0 50px;
+    color: white;
+    text-align: center;
+}
+
+/* Reduce side padding in header to use more width */
+.header .container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    max-width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .header .container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header .container {
+        max-width: 1400px !important;
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+}
+
+/* Animated gradient background */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Add subtle overlay pattern */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+            circle at 20% 50%,
+            rgba(255, 255, 255, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(255, 255, 255, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 40% 20%,
+            rgba(255, 255, 255, 0.05) 0%,
+            transparent 50%
+        );
+    animation: floatingShapes 20s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes floatingShapes {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+/* Animated particles effect */
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+            2px 2px at 20% 30%,
+            white,
+            transparent
+        ),
+        radial-gradient(2px 2px at 60% 70%, white, transparent),
+        radial-gradient(1px 1px at 50% 50%, white, transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(2px 2px at 90% 60%, white, transparent),
+        radial-gradient(1px 1px at 33% 90%, white, transparent),
+        radial-gradient(2px 2px at 10% 80%, white, transparent);
+    background-size: 200% 200%;
+    animation: particleFloat 30s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+@keyframes particleFloat {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Alternative: Mesh Gradient (Modern Design Trend 2024-2025) */
+.header.mesh-gradient {
+    background: radial-gradient(
+            at 27% 37%,
+            hsla(215, 98%, 61%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(
+            at 97% 21%,
+            hsla(125, 98%, 72%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(
+            at 52% 99%,
+            hsla(354, 98%, 61%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(
+            at 10% 29%,
+            hsla(256, 96%, 67%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(
+            at 97% 96%,
+            hsla(38, 60%, 74%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(
+            at 33% 50%,
+            hsla(222, 67%, 73%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(
+            at 79% 53%,
+            hsla(343, 68%, 79%, 1) 0px,
+            transparent 50%
+        );
+    animation: meshMove 20s ease infinite;
+}
+
+@keyframes meshMove {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(45deg);
+    }
+}
+
+/* Alternative: Tech-focused Dark Theme */
+.header.tech-dark {
+    background: linear-gradient(
+            to bottom,
+            rgba(10, 10, 35, 0.95),
+            rgba(20, 20, 50, 0.98)
+        ),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234facfe' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-blend-mode: overlay;
+}
+
+.header.tech-dark::before {
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(79, 172, 254, 0.1) 50%,
+        transparent 70%
+    );
+    animation: techScan 8s linear infinite;
+}
+
+@keyframes techScan {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+/* Alternative: Glassmorphism Style */
+.header.glass {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.header.glass::before {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+/* Make header content pop above the animated background */
+.header > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Clean & Simple About Me Section */
+.about-me-section {
+    text-align: left !important;
+}
+
+.about-me-section h2 {
+    font-size: 24px !important;
+    margin-bottom: 15px !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+}
+
+.about-me-section p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 10px !important;
+    text-align: left !important;
+}
+
+.about-me-section a {
+    color: #0d90e5 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-me-section a:hover {
+    color: #ffffff !important;
+}
+
+/* Simple card styling */
+.about-card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Clean button styling */
+.link {
+    background: #0d90e5 !important;
+    color: white !important;
+    padding: 8px 20px !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    margin: 6px 6px 6px 0 !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.link:hover {
+    background: #ffffff !important;
+    color: #0d90e5 !important;
+}
+
+.link i {
+    margin-right: 6px;
+}
+
+/* Technical expertise button styling */
+.servicelink.tech-expertise {
+    background: #0d90e5 !important;
+    margin-left: 10px;
+}
+
+/* ========================================
+   SERVICES PAGE STYLES (services.html)
+   ======================================== */
+
+/* Hero section */
+.services-hero {
+    background: linear-gradient(135deg, #0d90e5 0%, #2eaaff 50%, #ffffff 100%);
+    padding: 60px 0 40px;
+    color: white;
+    text-align: center;
+}
+
+.services-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.services-hero p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+.services-hero .subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-top: 15px;
+}
+
+/* CTA Buttons */
+.cta-button {
+    background: #ff6b35;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background: #e55a2b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.cta-button.cta-white {
+    background: white;
+    color: #0d90e5;
+}
+
+.cta-button.cta-white:hover {
+    background: #f0f0f0;
+    color: #0d90e5;
+}
+
+.cta-button.cta-linkedin {
+    background: #0077b5;
+}
+
+.cta-button.cta-linktree {
+    background: #43e55e;
+}
+
+.cta-button.cta-large {
+    font-size: 20px;
+    padding: 18px 50px;
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    color: #0d90e5;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.service-card.text-center {
+    text-align: center;
+}
+
+.service-card.featured {
+    border: 3px solid #0d90e5;
+}
+
+.service-card .featured-badge {
+    background: #0d90e5;
+    color: white;
+    padding: 5px;
+    margin: -40px -40px 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.service-icon {
+    font-size: 48px;
+    color: #0d90e5;
+    margin-bottom: 20px;
+}
+
+/* Pricing and Highlights */
+.pricing-highlight {
+    background: #f8f9fa;
+    padding: 30px;
+    border-left: 5px solid #0d90e5;
+    margin: 30px 0;
+}
+
+.pricing-highlight.margin-top-large {
+    margin-top: 60px;
+}
+
+.pricing-highlight h3 {
+    color: #0d90e5;
+    margin-bottom: 20px;
+}
+
+.pricing-highlight p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Why Me Section */
+.why-me {
+    background: #0d90e5;
+    color: white;
+    padding: 60px 0;
+    margin: 60px 0;
+}
+
+/* Testimonials */
+.testimonial {
+    background: #f8f9fa;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+/* Trust Bar */
+.trust-bar {
+    background: #f8f9fa;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.trust-bar p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Section Styling */
+.section-padding {
+    padding: 50px 0;
+}
+
+.section-bg-light {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.section-title-white {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section-title-dark {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Lists and Text */
+.tech-list {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.tech-list-plain {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.experience-note {
+    margin-top: 20px;
+}
+
+.card-subtitle {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.card-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Why Items */
+.why-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.why-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.why-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.why-text {
+    font-size: 16px;
+}
+
+/* Approach Section */
+.approach-item {
+    text-align: center;
+    padding: 30px;
+}
+
+.approach-number {
+    background: #0d90e5;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    line-height: 60px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, #0d90e5 0%, #2eaaff 100%);
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.contact-buttons {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #cccccc;
+    padding: 40px 0 25px;
+    text-align: center;
+    border-top: 3px solid #0d90e5;
+}
+
+footer .footer-logo-container {
+    margin-bottom: 20px;
+}
+
+footer .footer-logo-img {
+    width: 76px;
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+footer .footer-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+footer .footer-links {
+    margin-bottom: 15px;
+}
+
+footer .footer-credits {
+    font-size: 13px;
+    color: #999;
+}
+
+footer .footer-heart {
+    color: #e74c3c;
+}
+
+footer a {
+    color: #0d90e5;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #2eaaff;
+    text-decoration: none;
+}
+
+/* Google Tag Manager */
+.gtm-noscript {
+    display: none;
+    visibility: hidden;
+}
+
+/* ========================================
+   SPACING OPTIMIZATIONS FOR REDUCED SCROLLING
+   ======================================== */
+
+/* Reduce isotope item spacing (certification badges) */
+.isotope-item {
+    margin-bottom: 10px !important;
+}
+
+/* Tighter portfolio/work spacing */
+.col-xs-12.col-sm-4.col-md-3 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+/* Reduce heading bottom margins */
+h2 {
+    margin-bottom: 15px !important;
+}
+
+h3 {
+    margin-bottom: 10px !important;
+}
+
+/* Compact list spacing */
+ul, ol {
+    margin-bottom: 10px !important;
+}
+
+/* Reduce paragraph spacing */
+p {
+    margin-bottom: 8px !important;
+    line-height: 1.5 !important;
+}
+
+/* Business talking section - tighter */
+.business-talking {
+    padding: 30px 0 !important;
+}
+
+/* Experience cards - more compact */
+.col-xs-12.col-sm-6.col-md-4 {
+    margin-bottom: 15px !important;
+}
+
+/* Logo smaller */
+.logo {
+    margin-bottom: 15px !important;
+    width: 100px !important;
+}
+
+/* Header h1 more compact */
+.header h1 {
+    font-size: 42px !important;
+    margin: 0 0 15px 0 !important;
+}
+
+/* Intro text uses more width */
+.header-intro-list {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons flow better */
+.button-container-center .link {
+    margin: 5px 4px !important;
+}
+
+/* Reduce row spacing */
+.row {
+    margin-bottom: 10px;
+}
+
+/* Tighter section spacing overall */
+section {
+    margin-bottom: 0 !important;
+}
+
+/* Reduce hr spacing */
+hr {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Compact iframe containers */
+.iframe-height-90 {
+    margin-bottom: 10px !important;
+}
+
+/* Tighter badge containers */
+.badge-container {
+    margin: 10px 0 !important;
+    padding: 10px !important;
+}
+
+/* ========================================
+   HORIZONTAL TIMELINE (Experience Section)
+   Modern UI/UX Design - Ultra Compact
+   ======================================== */
+
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    padding: 20px 0 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    margin: 0 -15px;
+}
+
+/* Hide scrollbar but keep functionality */
+.timeline-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+    background: #0d90e5;
+    border-radius: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb:hover {
+    background: #0a7bd1;
+}
+
+/* Timeline Wrapper - Horizontal Layout */
+.timeline-wrapper {
+    display: flex;
+    position: relative;
+    min-width: min-content;
+    padding: 0 15px;
+    gap: 20px;
+}
+
+/* Horizontal Line */
+.timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0d90e5 0%, #2eaaff 100%);
+    z-index: 0;
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    min-width: 220px;
+    max-width: 220px;
+    padding-top: 50px;
+    flex-shrink: 0;
+}
+
+.timeline-item:last-child {
+    margin-right: 0;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid #0d90e5;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+/* Current job - special styling */
+.timeline-item.current .timeline-dot {
+    width: 26px;
+    height: 26px;
+    border-width: 4px;
+    border-color: #00d084;
+    background: #00d084;
+    box-shadow: 0 0 0 6px rgba(0, 208, 132, 0.2);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(0, 208, 132, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(0, 208, 132, 0);
+    }
+}
+
+/* Start job - special styling */
+.timeline-item.start .timeline-dot {
+    border-color: #764ba2;
+    background: white;
+}
+
+/* Timeline Card */
+.timeline-card {
+    background: white;
+    border-radius: 10px;
+    padding: 12px 14px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-height: 140px;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(13, 144, 229, 0.25);
+    border-color: #0d90e5;
+}
+
+.timeline-item.current .timeline-card {
+    border-color: #00d084;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fff9 100%);
+}
+
+/* Timeline Date Badge */
+.timeline-date {
+    display: inline-block;
+    background: #0d90e5;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+}
+
+.timeline-item.current .timeline-date {
+    background: #00d084;
+}
+
+.timeline-item.start .timeline-date {
+    background: #764ba2;
+}
+
+/* Company Name */
+.timeline-card h3 {
+    font-size: 15px !important;
+    color: #222;
+    margin: 0 0 6px 0 !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+}
+
+.timeline-card h3 i {
+    color: #0d90e5;
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+/* Role */
+.timeline-role {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    margin: 0 0 3px 0 !important;
+    line-height: 1.3 !important;
+}
+
+/* Location */
+.timeline-location {
+    font-size: 12px;
+    color: #888;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+}
+
+.timeline-location::before {
+    content: '📍 ';
+}
+
+/* Scroll Hint */
+.timeline-scroll-hint {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 12px;
+    animation: fadeInOut 2s infinite;
+}
+
+.timeline-scroll-hint i {
+    color: #0d90e5;
+    margin-right: 6px;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .timeline-item {
+        min-width: 200px;
+        max-width: 200px;
+    }
+    
+    .timeline-card {
+        padding: 10px 12px;
+        min-height: 130px;
+    }
+    
+    .timeline-card h3 {
+        font-size: 14px !important;
+    }
+    
+    .timeline-wrapper {
+        gap: 15px;
+    }
+}
+
+/* Desktop - Show more items */
+@media (min-width: 1200px) {
+    .timeline-item {
+        min-width: 240px;
+        max-width: 240px;
+    }
+    
+    .timeline-wrapper {
+        gap: 25px;
+    }
+}
+

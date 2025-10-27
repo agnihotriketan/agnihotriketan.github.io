@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -24,7 +27,6 @@
       Expert | Dubai, India | 13+ Years Experience
     </title>
     
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="Ketan Agnihotri - Senior Full Stack Engineer with 13+ years of experience at NAC Dubai &amp; Ex-Microsoft IDC. Expert in React, .NET Core, Azure, Microservices, AI/ML. Published author of 2 books. Available for consulting &amp; freelance projects. Contact for ReactJS, Azure &amp; .NET development services." name="description">
     <meta name="keywords" content="Ketan Agnihotri, Senior Full Stack Engineer, React Developer, .NET Core Developer, Azure Consultant, Microservices Expert, Dubai Software Engineer, Ex-Microsoft Developer, Full Stack Developer India, Azure DevOps, Kubernetes, Docker, React Native, TypeScript, C# Developer, Cloud Solutions Architect, AI ML Engineer, Azure OpenAI, Serverless Computing, MSAL, OAuth2, Freelance Developer, Software Consultant, ReactJS Expert, .NET 8, ASP.NET Core, Cosmos DB, Azure Functions, Tech Author, Programming Books, Indian Developer Dubai, Remote Software Developer, Full Stack Consultant, Enterprise Software Development, Scalable Systems, Microservices Architecture, Azure Certified, Microsoft Certified Trainer, MCT, MCSE, SDE2, Software Engineering, Web Development, API Development, Cloud Native Applications, DevOps Engineer, CI/CD, Azure DevOps, Terraform, SignalR, REST APIs, Event-Driven Architecture, CQRS, Clean Architecture, Agile Scrum, Software Development Lifecycle, National Air Cargo, Aviation Logistics Software, B2B Applications, B2C Applications, Real Estate Software, Travel Technology, Social Media Applications, Automobile Software, Client Communication, Business Analysis, Leadership, Team Management, Tech Speaker, YouTube Tech Content, Tech Blogger, LeetCode, Dayasagar Trust, Humanitarian Work, linktr.ee/agnihotriketan, k10.in, LinkedIn Ketan Agnihotri, GitHub agnihotriketan, Hire Full Stack Developer, Freelance React Developer, Freelance .NET Developer, Azure Migration Services, Cloud Consulting, Digital Transformation, Technical Training, Corporate Training, Software Mentoring, Scaler Mentor, Code Review Services, Technical Architecture, System Design, High Level Design, Low Level Design, Performance Optimization, Scalability Solutions, Security Best Practices, OWASP, Azure Security, Application Modernization, Legacy System Migration">
@@ -221,7 +223,7 @@
           "addressLocality": "Dubai",
           "addressCountry": "UAE"
         },
-        "email": "mailto:contact@k10.in",
+        "email": "mailto:agnihotriketan@gmail.com",
         "description": "Senior Full Stack Engineer with 13+ years of experience specializing in React, .NET Core, Azure, and Microservices. Ex-Microsoft SDE2, currently at NAC Dubai. Published author of 2 technical books. Available for consulting and freelance projects.",
         "offers": {
           "@type": "Offer",
@@ -374,11 +376,15 @@
     
     <!-- Modern font loading with display swap - Inter & Space Grotesk -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
+    
+    <!-- CSS Files -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    
     <!--[if IE
       ]><style type="text/css">
         .pie {
@@ -386,6 +392,8 @@
         }
       </style><!
     [endif]-->
+    
+    <!-- JavaScript Files -->
     <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
@@ -393,12 +401,13 @@
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
-
+    
     <!--[if lt IE 9]>
       <script src="js/respond-1.1.0.min.js"></script>
       <script src="js/html5shiv.js"></script>
       <script src="js/html5element.js"></script>
     <![endif]-->
+    
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="" defer=""></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
     <script>
@@ -410,276 +419,6 @@
       });
     </script>-->
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9607849093628299" crossorigin="anonymous"></script>
-
-    <!-- Modern Header Background Styling -->
-    <style>
-      /* Modern gradient background matching your brand colors (#0d90e5 to #ffffff) */
-      .header {
-        text-align: center;
-        background: linear-gradient(
-          135deg,
-          #0d90e5 0%,
-          #1a9ef0 20%,
-          #2eaaff 40%,
-          #5ac8ff 60%,
-          #8fddff 80%,
-          #d4f1ff 90%,
-          #ffffff 100%
-        );
-        background-size: 400% 400%;
-        animation: gradientShift 15s ease infinite;
-        padding: 20px 0;
-        position: relative;
-        overflow: hidden;
-      }
-
-      /* Animated gradient background */
-      @keyframes gradientShift {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      /* Add subtle overlay pattern */
-      .header::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: radial-gradient(
-            circle at 20% 50%,
-            rgba(255, 255, 255, 0.1) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 80% 80%,
-            rgba(255, 255, 255, 0.1) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 40% 20%,
-            rgba(255, 255, 255, 0.05) 0%,
-            transparent 50%
-          );
-        animation: floatingShapes 20s ease-in-out infinite;
-        pointer-events: none;
-      }
-
-      @keyframes floatingShapes {
-        0%,
-        100% {
-          transform: translateY(0) scale(1);
-        }
-        50% {
-          transform: translateY(-20px) scale(1.05);
-        }
-      }
-
-      /* Animated particles effect */
-      .header::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: radial-gradient(
-            2px 2px at 20% 30%,
-            white,
-            transparent
-          ),
-          radial-gradient(2px 2px at 60% 70%, white, transparent),
-          radial-gradient(1px 1px at 50% 50%, white, transparent),
-          radial-gradient(1px 1px at 80% 10%, white, transparent),
-          radial-gradient(2px 2px at 90% 60%, white, transparent),
-          radial-gradient(1px 1px at 33% 90%, white, transparent),
-          radial-gradient(2px 2px at 10% 80%, white, transparent);
-        background-size: 200% 200%;
-        animation: particleFloat 30s linear infinite;
-        opacity: 0.3;
-        pointer-events: none;
-      }
-
-      @keyframes particleFloat {
-        0% {
-          background-position: 0% 0%;
-        }
-        100% {
-          background-position: 100% 100%;
-        }
-      }
-
-      /* Alternative: Mesh Gradient (Modern Design Trend 2024-2025) */
-      .header.mesh-gradient {
-        background: radial-gradient(
-            at 27% 37%,
-            hsla(215, 98%, 61%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 97% 21%,
-            hsla(125, 98%, 72%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 52% 99%,
-            hsla(354, 98%, 61%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 10% 29%,
-            hsla(256, 96%, 67%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 97% 96%,
-            hsla(38, 60%, 74%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 33% 50%,
-            hsla(222, 67%, 73%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 79% 53%,
-            hsla(343, 68%, 79%, 1) 0px,
-            transparent 50%
-          );
-        animation: meshMove 20s ease infinite;
-      }
-
-      @keyframes meshMove {
-        0%,
-        100% {
-          filter: hue-rotate(0deg);
-        }
-        50% {
-          filter: hue-rotate(45deg);
-        }
-      }
-
-      /* Alternative: Tech-focused Dark Theme */
-      .header.tech-dark {
-        background: linear-gradient(
-            to bottom,
-            rgba(10, 10, 35, 0.95),
-            rgba(20, 20, 50, 0.98)
-          ),
-          url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234facfe' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        background-blend-mode: overlay;
-      }
-
-      .header.tech-dark::before {
-        background: linear-gradient(
-          45deg,
-          transparent 30%,
-          rgba(79, 172, 254, 0.1) 50%,
-          transparent 70%
-        );
-        animation: techScan 8s linear infinite;
-      }
-
-      @keyframes techScan {
-        0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(200%);
-        }
-      }
-
-      /* Alternative: Glassmorphism Style */
-      .header.glass {
-        background: rgba(255, 255, 255, 0.1);
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      }
-
-      .header.glass::before {
-        background: linear-gradient(
-          135deg,
-          rgba(255, 255, 255, 0.2) 0%,
-          rgba(255, 255, 255, 0) 100%
-        );
-      }
-
-      /* Make header content pop above the animated background */
-      .header > * {
-        position: relative;
-        z-index: 1;
-      }
-
-      /* Clean & Simple About Me Section */
-      .about-me-section {
-        text-align: left !important;
-      }
-
-      .about-me-section h2 {
-        font-size: 24px !important;
-        margin-bottom: 20px !important;
-        font-weight: 500 !important;
-        text-align: left !important;
-      }
-
-      .about-me-section p {
-        font-size: 15px !important;
-        line-height: 1.6 !important;
-        margin-bottom: 12px !important;
-        text-align: left !important;
-      }
-
-      .about-me-section a {
-        color: #0d90e5 !important;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .about-me-section a:hover {
-        color: #ffffff !important;
-      }
-
-      /* Simple card styling */
-      .about-card {
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 12px;
-        padding: 25px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        margin-bottom: 20px;
-      }
-
-      /* Clean button styling */
-      .link {
-        background: #0d90e5 !important;
-        color: white !important;
-        padding: 10px 24px !important;
-        border-radius: 6px !important;
-        text-decoration: none !important;
-        display: inline-block !important;
-        margin: 8px 8px 8px 0 !important;
-        font-weight: 500 !important;
-        transition: all 0.2s ease !important;
-      }
-
-      .link:hover {
-        background: #ffffff !important;
-        color: #0d90e5 !important;
-      }
-
-      .link i {
-        margin-right: 6px;
-      }
-    </style>
   </head>
   <body>
     <!-- Skip to main content for accessibility -->
@@ -733,10 +472,8 @@
             </li>
             <li>
               <a
-                href="Videos.html"
+                href="#Videos"
                 title="Videos"
-                target="_blank"
-                rel="noopener"
                 aria-label="Videos"
                 ><i class="fa-youtube-play"></i>Videos</a
               >
@@ -775,191 +512,179 @@
       <header class="header" id="header">
         <!--header-start-->
         <div class="container">
-          <figure class="logo animated fadeInDown delay-07s">
-            <a href="index.html" aria-label="Ketan Agnihotri - Homepage"
-              ><img
-                src="img/ketanLinkedinWhite.png"
-                class="logo-img profile-img-rounded"
-                alt="Ketan Agnihotri - Senior Full Stack Engineer - React, .NET Core, Azure Expert"
-            /></a>
-          </figure>
-          <h1 class="animated fadeInDown delay-07s header-title">
-            👋 Hi, I'm Ketan Agnihotri
-          </h1>
-          <ul
-            class="we-create animated fadeInUp delay-1s header-intro-list"
-          >
-            <li class="header-intro-text">
-              💼 Senior Full Stack Engineer @ NAC Dubai | Ex-Microsoft IDC |
-              Proud Indian 🇮🇳
-              <br />
-              🚀 Building scalable systems with React, .NET Core, Azure &
-              Microservices
-              <br />
-              📚 Author of 2 Books | Microsoft Certified Trainer (MCT) 2020-2022
-              | 13+ Years Experience
-            </li>
-          </ul>
-          <div class="row">
-            <div class="col-lg-12 col-sm-12 wow fadeInLeft delay-05s button-container-center">
-              <a
-                class="link animated fadeInUp delay-1s"
-                download
-                href="Ketan_AgnihotriFullstackSDE_.Net_React.Js_12+yrs@Microsoft.pdf"
-                ><i class="fa-file-pdf-o"></i> Download CV</a
-              >
-              <a
-                class="link animated fadeInDown delay-1s"
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/agnihotriketan"
-                ><i class="fa-github"></i> My Git Repo</a
-              >
-              <a
-                class="link animated fadeInUp delay-1s"
-                target="_blank"
-                rel="noopener"
-                href="Documents/KetanAgnihotriMCSE.PDF"
-                ><i class="fa-file-pdf-o"></i> Verify Certification Transcript</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-5 col-sm-5 wow fadeInLeft delay-05s">
-              <div class="about-card about-me-section">
-                <h2>🧠 About Me</h2>
-                <p>
-                  🔑 Senior Full Stack Engineer at National Air Cargo (NAC),
-                  Dubai with 13+ years of global software development experience
-                </p>
-                <p>
-                  🧩 Ex-SDE2 at Microsoft IDC, specializing in enterprise-scale
-                  applications using React, .NET Core, Azure, and Microservices
-                </p>
-                <p>
-                  🌱 Currently exploring SRE practices, Docker, and Kubernetes
-                  for cloud-native applications
-                </p>
-                <p>
-                  🔭 Expert in: ReactJS, React Native, TypeScript, Azure OpenAI,
-                  .NET 8, Microservices, Micro-frontends, Event-Driven
-                  Architecture
-                </p>
-                <p>
-                  👯 Open to collaborate on ReactJS, .NET Core, and Azure
-                  projects - Available for consulting and freelance
-                  opportunities
-                </p>
-                <p>
-                  🤖 Passionate about AI & ML integration, building future-ready
-                  scalable solutions for businesses worldwide
-                </p>
-                <p>
-                  ❤️ Developer by profession, humanitarian at heart – Supporting
-                  Dayasagar Trust for 17+ years, giving back to the community
-                </p>
-                <p>
-                  📫 Reach me:
-                  <a href="https://k10.in" aria-label="Visit my website"
-                    >k10.in</a
-                  >
-                  |
-                  <a
-                    href="https://www.linkedin.com/in/ketanagnihotri/"
-                    aria-label="Visit my LinkedIn profile"
-                    >LinkedIn</a
-                  >
-                </p>
-                <p>
-                  ⚡ Fun fact: Always hungry for challenges — 6 companies in 13+
-                  years, constantly learning and evolving
-                </p>
-              </div>
-            </div>
-            <div
-              class="col-lg-5 col-sm-5 wow fadeInLeft delay-05s about-card about-me-section"
-            >
-              <br />
-              <h3 class="skillsHeading">
-                My professional value boils down to the following:
-              </h3>
-              <ul>
-                <li>
-                  Team-oriented & ambitious software professional with a
-                  successful track record of delivering performance-driven B2B
-                  and B2C apps.
-                </li>
-                <li>
-                  Consultation, Requirement & Business Analysis, Client
-                  communication
-                </li>
-                <li>
-                  Quality work delivered in Real-Estate, Travel, Social Media,
-                  Automobile domains.
-                </li>
-                <li>
-                  Strong capacity to manage multiple projects on strict
-                  timelines & quality in work delivery.
-                </li>
-                <li>
-                  Agile Practices, Requirement & Business Analysis, Client
-                  communication - Application deployment on cloud using SQL Azue
-                  and Azure storage
-                </li>
-                <li>
-                  Work experience with large teams in MVC, Repository Pattern,
-                  Jscript & JQuery, Web API, LINQ, 3-tier architecture
-                </li>
-                <li>
-                  Responsive web app designing using Bootstrap framework 3.0,
-                  CSS3, HTML5. - Writing stored procedure and triggers for data
-                  management
-                </li>
-                <li>
-                  I don't care who gets credit. I just want to win. I'm the calm
-                  one. I run toward the fires.
-                </li>
-                <li>
-                  Lots of people have Big ideas. Execution is what matters, and
-                  I do execution.
-                </li>
+          <!-- Modern Hero Section with Profile -->
+          <div class="hero-profile-section">
+            <div class="hero-content">
+              <h1 class="animated fadeInDown delay-07s hero-main-title">
+                👋 Hi, I'm Ketan Agnihotri
+              </h1>
+              <p class="hero-tagline animated fadeInUp delay-08s">
+                💼 Senior Full Stack Engineer @ NAC Dubai | Ex-Microsoft IDC | Proud Indian 🇮🇳
+              </p>
+              <ul class="hero-highlights animated fadeInUp delay-1s">
+                <li>🚀 Building scalable systems with React, .NET Core, Azure & Microservices</li>
+                <li>📚 Author of 2 Books | Microsoft Certified Trainer (MCT) 2020-2022 | 13+ Years Experience</li>
               </ul>
             </div>
-            <div class="col-lg-2 col-sm-2  ">
-              <a
-                href="https://in.bpbonline.com/products/react-development-using-typescript"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <div class="hero-profile-card animated fadeInRight delay-09s">
+              <div class="profile-image-wrapper">
                 <img
-                  class="zoom"
-                  src="img/ReactBook.jpg"
-                  alt="React Development using TypeScript - Book by Ketan Agnihotri - Complete Guide to Building React Applications"
-                /> </a
-              ><br />
-              <a
-                class="link animated fadeInUp delay-1s"
-                target="_blank"
-                rel="noopener"
-                href="https://amzn.in/d/0bPQL2DL"
-                ><i class="fa-file-pdf-o"></i>Buy On Amazon</a
-              >
-              <div
-                class="LI-profile-badge"
-                data-version="v1"
-                data-size="medium"
-                data-locale="en_US"
-                data-type="vertical"
-                data-theme="dark"
-                data-vanity="ketanagnihotri"
-              >
-                <a
-                  class="LI-simple-link"
-                  href="https://in.linkedin.com/in/ketanagnihotri?trk=profile-badge"
-                  aria-label="View Ketan Agnihotri's LinkedIn profile"
-                >
+                  src="img/ketanLinkedinWhite.png"
+                  class="profile-image"
+                  alt="Ketan Agnihotri - Senior Full Stack Engineer - React, .NET Core, Azure Expert"
+                />
+              </div>
+              <div class="profile-quick-links">
+                <a href="https://www.linkedin.com/in/ketanagnihotri/" target="_blank" rel="noopener" class="profile-link" aria-label="LinkedIn Profile">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/agnihotriketan" target="_blank" rel="noopener" class="profile-link" aria-label="GitHub Profile">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="https://twitter.com/KetanAgnihotri" target="_blank" rel="noopener" class="profile-link" aria-label="Twitter Profile">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/c/ketanagnihotri?sub_confirmation=1" target="_blank" rel="noopener" class="profile-link" aria-label="Twitter Profile">
+                  <i class="fa fa-youtube-play"></i>
                 </a>
               </div>
+            </div>
+          </div>
+         
+          <!-- Modern Action Buttons -->
+          <div class="action-buttons-grid">
+            <a
+              class="action-btn action-primary"
+              download
+              href="Ketan_AgnihotriFullstackSDE_.Net_React.Js_12+yrs@Microsoft.pdf"
+              aria-label="Download CV"
+            >
+              <div class="action-icon">
+                <i class="fa fa-download"></i>
+              </div>
+              <div class="action-content">
+                <span class="action-title">Download CV</span>
+                <span class="action-subtitle">Resume PDF</span>
+              </div>
+            </a>
+
+          
+
+            <a
+              class="action-btn action-accent"
+              target="_blank"
+              rel="noopener"
+              href="Documents/KetanAgnihotriMCSE.PDF"
+              aria-label="View Certification Transcript"
+            >
+              <div class="action-icon">
+                <i class="fa fa-certificate"></i>
+              </div>
+              <div class="action-content">
+                <span class="action-title">Certifications</span>
+                <span class="action-subtitle">View Transcript</span>
+              </div>
+            </a>
+
+            <a
+              class="action-btn action-social"
+              href="https://linktr.ee/agnihotriketan"
+              target="_blank"
+              rel="noopener"
+              aria-label="Connect on Social Media"
+            >
+              <div class="action-icon">
+                <i class="fa fa-link"></i>
+              </div>
+              <div class="action-content">
+                <span class="action-title">Connect</span>
+                <span class="action-subtitle">Social Links</span>
+              </div>
+            </a>
+
+            <a
+              class="action-btn action-tech"
+              href="services.html"
+              aria-label="View Technical Expertise"
+            >
+              <div class="action-icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <div class="action-content">
+                <span class="action-title">Tech Stack</span>
+                <span class="action-subtitle">Expertise</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Book Highlight Banner -->
+          <div class="book-highlight-banner">
+            <div class="book-banner-content">
+              <div class="book-icon-wrapper">
+                <i class="fa fa-book"></i>
+              </div>
+              <div class="book-info">
+                <h3 class="book-banner-title">📘 React Development using TypeScript</h3>
+                <p class="book-banner-desc">Complete Guide to Building React Applications - Book by Ketan Agnihotri</p>
+              </div>
+              <a href="https://amzn.in/d/0bPQL2DL" target="_blank" rel="noopener" class="book-buy-btn">
+                <i class="fa fa-amazon"></i> Buy On Amazon
+              </a>
+            </div>
+          </div>
+
+          <!-- Modern Compact About Section -->
+          <div class="about-section-modern">
+            <div class="about-grid">
+              <!-- About Me Card -->
+              <div class="about-card-modern">
+                <h2 class="about-heading"><i class="fa fa-user"></i> About Me</h2>
+                <div class="about-content-compact">
+                  <p>🔑 Senior Full Stack Engineer at National Air Cargo (NAC), Dubai with 13+ years of global software development experience</p>
+                  <p>🧩 Ex-SDE2 at Microsoft IDC, specializing in enterprise-scale applications using React, .NET Core, Azure, and Microservices</p>
+                  <p>🌱 Currently exploring SRE practices, Docker, and Kubernetes for cloud-native applications</p>
+                  <p>🔭 Expert in: ReactJS, React Native, TypeScript, Azure OpenAI, .NET 8, Microservices, Micro-frontends, Event-Driven Architecture</p>
+                  <p>👯 Open to collaborate on ReactJS, .NET Core, and Azure projects - Available for consulting and freelance opportunities</p>
+                  <p>🤖 Passionate about AI & ML integration, building future-ready scalable solutions for businesses worldwide</p>
+                  <p>❤️ Developer by profession, humanitarian at heart – Supporting <a href="https://www.dayasagartrustnashik.com/" target="_blank" rel="noopener">Dayasagar Trust</a> for 17+ years</p>
+                  <p>📫 Reach me: <a href="https://k10.in">k10.in</a> | <a href="https://www.linkedin.com/in/ketanagnihotri/">LinkedIn</a></p>
+                  <p>⚡ Fun fact: Always hungry for challenges — 6 companies in 13+ years, constantly learning and evolving</p>
+                </div>
+              </div>
+
+              <!-- Professional Value Card -->
+              <div class="about-card-modern">
+                <h2 class="about-heading"><i class="fa fa-star"></i> Professional Value</h2>
+                <ul class="value-list-compact">
+                  <li>Team-oriented & ambitious software professional with a successful track record of delivering performance-driven B2B and B2C apps</li>
+                  <li>Consultation, Requirement & Business Analysis, Client communication</li>
+                  <li>Quality work delivered in Real-Estate, Travel, Social Media, Automobile domains</li>
+                  <li>Strong capacity to manage multiple projects on strict timelines & quality in work delivery</li>
+                  <li>Agile Practices, Application deployment on cloud using Azure SQL and Azure storage</li>
+                  <li>Work experience with large teams in MVC, Repository Pattern, JavaScript & jQuery, Web API, LINQ, 3-tier architecture</li>
+                  <li>Responsive web app designing using Bootstrap, CSS3, HTML5</li>
+                  <li>I don't care who gets credit. I just want to win. I'm the calm one. I run toward the fires</li>
+                  <li>Lots of people have Big ideas. Execution is what matters, and I do execution</li>
+                </ul>
+              </div>
+
+              <!-- Book & Connect Card -->
+              <!-- <div class="about-card-modern sidebar-card">
+                <h2 class="about-heading"><i class="fa fa-book"></i> My Book</h2>
+                <div class="book-showcase">
+                  <a href="https://in.bpbonline.com/products/react-development-using-typescript" target="_blank" rel="noopener noreferrer">
+                    <img class="book-cover-image" src="img/ReactBook.jpg" alt="React Development using TypeScript - Book by Ketan Agnihotri" />
+                  </a>
+                  <a class="book-buy-link" target="_blank" rel="noopener" href="https://amzn.in/d/0bPQL2DL">
+                    <i class="fa fa-amazon"></i> Buy On Amazon
+                  </a>
+                </div>
+                
+                <h3 class="connect-heading"><i class="fa fa-linkedin"></i> Connect</h3>
+                <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ketanagnihotri">
+                  <a class="LI-simple-link" href="https://in.linkedin.com/in/ketanagnihotri?trk=profile-badge" aria-label="View Ketan Agnihotri's LinkedIn profile"></a>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -968,326 +693,282 @@
     <!--header-end-->
     <section class="main-section" id="Certification">
       <div class="container">
-        <h2>Certification</h2>
-        <div class="row">
-          <div class="col-lg-5 col-sm-5 wow fadeInLeft delay-05s">
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>MCT : Microsoft Certified Trainer 2020-2022</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>
-                  AZ-400 : Designing and Implementing Microsoft DevOps Solutions
-                </h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud fa-spin"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>
-                  AZ-203 : Microsoft Certified - Azure Developer Associate
-                </h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>
-                  AZ-500: Microsoft Certified: Azure Security Engineer Associate
-                </h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>70-532: Developing Microsoft Azure Solutions</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>AZ-900: Microsoft Azure Fundamentals</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>
-                  70-533: Implementing Microsoft Azure Infrastructure Solutions
-                </h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>70-535: Architecting Microsoft Azure Solutions</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-cloud"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>70-487: Developing Microsoft Azure and Web Services</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-4 wow fadeInLeft delay-05s">
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-certificate"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>98-381: Introduction to Programming Using Python</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-certificate"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>
-                  70-486: Developing MVC web application, Microsoft Certified
-                  Professional
-                </h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-certificate"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>70-483: Programming in C#</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-certificate"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>70-480: Programming in HTML5 with JavaScript and CSS3</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-certificate"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>70-497: Software Testing with Visual Studio</h3>
-                <p>Microsoft</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-database"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>Mongo DB for DBAs M102</h3>
-                <p>MongoDB University</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-gear"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>M101N: MongoDB for .NET Developers</h3>
-                <p>MongoDB University</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col1">
-                <i class="fa-university"></i>
-              </div>
-              <div class="service-list-col2">
-                <h3>Bachelor of Engineering in Information Technology</h3>
-                <p>University of Pune</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-3 wow fadeInLeft delay-05s">
-            <div>
-              <a
-                href="https://in.bpbonline.com/products/serverless-computing-using-azure-functions"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="zoom"
-                  src="img/ServerLesscomputing using Azure.jpeg"
-                  alt="Serverless Computing Using Azure Functions - Book by Ketan Agnihotri - Guide to Building Scalable Serverless Apps on Azure"
-                />
-              </a>
-            </div>
-            <hr />
-            <h5>
-              Power BI reports with Azure DevOps [i.e. VSTS] in 10 minutes
-            </h5>
-            <iframe
-              src="https://www.youtube.com/embed/WuUivOtb9ps"
-              allowfullscreen
-              class="iframe-height-90"
-              title="Power BI reports with Azure DevOps tutorial video"
-            ></iframe>
-
-             <hr />
-            <a
-              href="https://www.scaler.com/academy/mentor/profile/3f0d2842bbad/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit my Scaler mentor profile"
-              >Mentor @Scaler</a
-            >
-            |
-            <a
-              href="https://www.antwak.com/author/1908-ketan-agnihotri"
-              target="_blank"
-              rel="noopener"
-              aria-label="Follow me on AntWak"
-              >Follow @ AntWak</a
-            >
-            <hr />
-            <div class="badge-container">
-           
-              <div
-                data-iframe-width="150"
-                data-iframe-height="270"
-                data-share-badge-id="af832003-da4b-43ac-9553-ffd1f454fce6"
-                data-share-badge-host="https://www.credly.com"
-              ></div>
-              <script
-                type="text/javascript"
-                async
-                src="https://cdn.credly.com/assets/utilities/embed.js"
-              ></script>
-            </div>
-            <hr />
-            <div>
-              <a
-                href="https://www.urbanpro.com/ketanagnihotri"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="img/Proud to be a Teacher.png"
-                  alt="Ketan Agnihotri - Proud Teacher & Mentor - Technical Training & Mentoring Services"
-                />
-              </a>
-            </div>
-            <hr />
-            <a
-              target="_blank"
-              rel="noopener"
-              title="Click here to watch on Youtube"
-              class="text-red"
-              href="https://www.youtube.com/c/ketanagnihotri?sub_confirmation=1"
-              >Subscribe me on YouTube. <i class="fa fa-youtube-play fa-3x"></i
-            ></a>
+        <div class="cert-header-row">
+          <h2><i class="fa fa-certificate"></i> Certifications</h2>
+          <div class="cert-count-badges">
+            <span class="count-pill azure-pill">9+ Azure</span>
+            <span class="count-pill dev-pill">5+ Dev</span>
+            <span class="count-pill mct-pill">MCT</span>
+            <span class="count-pill db-pill">2+ DB</span>
           </div>
         </div>
+
+        <!-- Simplified Tabs -->
+        <div class="cert-filter-tabs">
+          <button class="filter-tab" onclick="filterCerts('all')">All (20+)</button>
+          <button class="filter-tab active" onclick="filterCerts('azure-cert')">Azure</button>
+          <button class="filter-tab" onclick="filterCerts('dev-cert')">Development</button>
+          <button class="filter-tab" onclick="filterCerts('db-cert')">Database</button>
+        </div>
+
+        <!-- Super Compact Table-Like List -->
+        <div class="cert-table">
+          
+          <!-- MCT - Featured -->
+          <div class="cert-row featured azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-star"></i></div>
+            <div class="cert-content">
+              <strong>Microsoft Certified Trainer</strong>
+              <span class="cert-meta">MCT 2020-2022 | Microsoft</span>
+            </div>
+            <span class="cert-badge mct-badge">MCT</span>
+          </div>
+
+          <!-- Azure Certifications -->
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-cloud"></i></div>
+            <div class="cert-content">
+              <strong>Designing Microsoft DevOps Solutions</strong>
+              <span class="cert-meta">AZ-400 | Microsoft</span>
+            </div>
+            <span class="cert-badge active-badge">Active</span>
+          </div>
+
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-cloud"></i></div>
+            <div class="cert-content">
+              <strong>Azure Developer Associate</strong>
+              <span class="cert-meta">AZ-203 | Microsoft</span>
+            </div>
+            <span class="cert-badge legacy-badge">Legacy</span>
+          </div>
+
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-shield"></i></div>
+            <div class="cert-content">
+              <strong>Azure Security Engineer</strong>
+              <span class="cert-meta">AZ-500 | Microsoft</span>
+            </div>
+            <span class="cert-badge active-badge">Active</span>
+          </div>
+
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-cloud"></i></div>
+            <div class="cert-content">
+              <strong>Azure Fundamentals</strong>
+              <span class="cert-meta">AZ-900 | Microsoft</span>
+            </div>
+          </div>
+
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-cloud"></i></div>
+            <div class="cert-content">
+              <strong>Developing Azure Solutions</strong>
+              <span class="cert-meta">70-532 | Microsoft</span>
+            </div>
+            <span class="cert-badge legacy-badge">Legacy</span>
+          </div>
+
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-server"></i></div>
+            <div class="cert-content">
+              <strong>Azure Infrastructure Solutions</strong>
+              <span class="cert-meta">70-533 | Microsoft</span>
+            </div>
+            <span class="cert-badge legacy-badge">Legacy</span>
+          </div>
+
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-sitemap"></i></div>
+            <div class="cert-content">
+              <strong>Architecting Azure Solutions</strong>
+              <span class="cert-meta">70-535 | Microsoft</span>
+            </div>
+            <span class="cert-badge legacy-badge">Legacy</span>
+          </div>
+
+          <div class="cert-row azure-cert" data-category="azure-cert">
+            <div class="cert-icon-sm azure-bg"><i class="fa fa-cogs"></i></div>
+            <div class="cert-content">
+              <strong>Azure and Web Services</strong>
+              <span class="cert-meta">70-487 | Microsoft</span>
+            </div>
+            <span class="cert-badge legacy-badge">Legacy</span>
+          </div>
+
+          <!-- Development Certifications -->
+          <div class="cert-row dev-cert" data-category="dev-cert">
+            <div class="cert-icon-sm dev-bg"><i class="fa fa-code"></i></div>
+            <div class="cert-content">
+              <strong>Programming Using Python</strong>
+              <span class="cert-meta">98-381 | Microsoft</span>
+            </div>
+          </div>
+
+          <div class="cert-row dev-cert" data-category="dev-cert">
+            <div class="cert-icon-sm dev-bg"><i class="fa fa-code"></i></div>
+            <div class="cert-content">
+              <strong>ASP.NET MVC Web Applications</strong>
+              <span class="cert-meta">70-486 MCP | Microsoft</span>
+            </div>
+          </div>
+
+          <div class="cert-row dev-cert" data-category="dev-cert">
+            <div class="cert-icon-sm dev-bg"><i class="fa fa-code"></i></div>
+            <div class="cert-content">
+              <strong>Programming in C#</strong>
+              <span class="cert-meta">70-483 | Microsoft</span>
+            </div>
+          </div>
+
+          <div class="cert-row dev-cert" data-category="dev-cert">
+            <div class="cert-icon-sm dev-bg"><i class="fa fa-html5"></i></div>
+            <div class="cert-content">
+              <strong>HTML5, JavaScript and CSS3</strong>
+              <span class="cert-meta">70-480 | Microsoft</span>
+            </div>
+          </div>
+
+          <div class="cert-row dev-cert" data-category="dev-cert">
+            <div class="cert-icon-sm dev-bg"><i class="fa fa-check-circle"></i></div>
+            <div class="cert-content">
+              <strong>Software Testing with Visual Studio</strong>
+              <span class="cert-meta">70-497 | Microsoft</span>
+            </div>
+          </div>
+
+          <!-- Database Certifications -->
+          <div class="cert-row db-cert" data-category="db-cert">
+            <div class="cert-icon-sm db-bg"><i class="fa fa-database"></i></div>
+            <div class="cert-content">
+              <strong>MongoDB for DBAs</strong>
+              <span class="cert-meta">M102 | MongoDB University</span>
+            </div>
+          </div>
+
+          <div class="cert-row db-cert" data-category="db-cert">
+            <div class="cert-icon-sm db-bg"><i class="fa fa-database"></i></div>
+            <div class="cert-content">
+              <strong>MongoDB for .NET Developers</strong>
+              <span class="cert-meta">M101N | MongoDB University</span>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="cert-row edu-cert" data-category="edu-cert">
+            <div class="cert-icon-sm edu-bg"><i class="fa fa-graduation-cap"></i></div>
+            <div class="cert-content">
+              <strong>Bachelor of Engineering (IT)</strong>
+              <span class="cert-meta">B.E. | University of Pune</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Compact Footer Links -->
+        <div class="cert-footer-links">
+          <a href="Documents/KetanAgnihotriMCSE.PDF" target="_blank" rel="noopener"><i class="fa fa-file-pdf-o"></i> View Transcript</a>
+          <a href="https://www.scaler.com/academy/mentor/profile/3f0d2842bbad/" target="_blank" rel="noopener"><i class="fa fa-user"></i> Scaler Mentor</a>
+          <a href="https://www.credly.com/badges/af832003-da4b-43ac-9553-ffd1f454fce6/embedded" target="_blank" rel="noopener"><i class="fa fa-trophy"></i> Credly</a>
+        </div>
+
       </div>
     </section>
 
     <section class="main-section alabaster" id="Experience">
       <div class="container">
         <h2>Professional Experience - 13+ Years</h2>
-        <h6>What I did & where ?</h6>
-        <div class="row">
-          <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> National Air Cargo</h3>
-                <p>Working as Fullstack SDE from 14th July 2025 to till date</p>
+        <h6>My Career Journey</h6>
+        
+        <!-- Horizontal Timeline -->
+        <div class="timeline-container">
+          <div class="timeline-wrapper">
+            
+            <!-- Timeline Item 1 - Current -->
+            <div class="timeline-item current">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Jul 2025 - Present</div>
+                <h3><i class="fa fa-building"></i> National Air Cargo</h3>
+                <p class="timeline-role">Fullstack SDE</p>
+                <p class="timeline-location">Dubai, UAE</p>
               </div>
             </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-microsoft"></i> Microsoft (IDC)</h3>
-                <p>Working as SDE 2 from 8th Jan 2018 to July 2025</p>
-              </div>
-            </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Deloitte USI</h3>
-                <p>
-                  Worked as Technology Consultant from 20th Mar 2017 to Dec 17
-                </p>
-              </div>
-            </div>
-            <div class="service-list">
-              <!--<div class="service-list-col1">
-                          <i class="fa-paw"></i>
-                        </div>-->
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Tavisca</h3>
-                <p>
-                  Worked as software developer from 3rd Aug 2015 to 24 Feb 2017
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Saviant Consulting</h3>
-                <p>
-                  Worked as software developer from 7th May Aug 2014 to July
-                  2015
-                </p>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Jan 2018 - Jul 2025</div>
+                <h3><i class="fa fa-windows"></i> Microsoft IDC</h3>
+                <p class="timeline-role">SDE 2</p>
+                <p class="timeline-location">Hyderabad, India</p>
               </div>
             </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Execula</h3>
-                <p>
-                  Worked as MVC & Azure consultant from Oct 2013 to April 2014
-                </p>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Mar - Dec 2017</div>
+                <h3><i class="fa fa-building"></i> Deloitte USI</h3>
+                <p class="timeline-role">Technology Consultant</p>
+                <p class="timeline-location">India</p>
               </div>
             </div>
-            <div class="service-list">
-              <div class="service-list-col2">
-                <h3><i class="fa-building"></i> Innovatus</h3>
-                <p>
-                  Worked as software developer from 1st July 2012 to Oct 2013
-                </p>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Aug 2015 - Feb 2017</div>
+                <h3><i class="fa fa-plane"></i> Tavisca</h3>
+                <p class="timeline-role">Software Developer</p>
+                <p class="timeline-location">Pune, India</p>
               </div>
             </div>
-          </div> 
+
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">May 2014 - Jul 2015</div>
+                <h3><i class="fa fa-code"></i> Saviant Consulting</h3>
+                <p class="timeline-role">Software Developer</p>
+                <p class="timeline-location">Pune, India</p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 6 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Oct 2013 - Apr 2014</div>
+                <h3><i class="fa fa-cloud"></i> Execula</h3>
+                <p class="timeline-role">MVC & Azure Consultant</p>
+                <p class="timeline-location">Pune, India</p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 7 - Start -->
+            <div class="timeline-item start">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Jul 2012 - Oct 2013</div>
+                <h3><i class="fa fa-rocket"></i> Innovatus</h3>
+                <p class="timeline-role">Software Developer</p>
+                <p class="timeline-location">Pune, India</p>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+        <!-- Scroll Hint -->
+        <div class="timeline-scroll-hint">
+          <i class="fa fa-long-arrow-right"></i> Scroll horizontally to explore timeline
+        </div>
+
       </div>
     </section>
 
@@ -1337,6 +1018,94 @@
         </div>
       </div>
     </section>
+
+    <!-- Video Tutorials Section -->
+    <section class="main-section alabaster" id="Videos">
+      <div class="container">
+        <h2><i class="fa fa-youtube-play"></i> Video Tutorials</h2>
+        <p class="videos-intro">
+          Watch my tutorials on Azure, DevOps, Web Development & Career Guidance. 
+          <strong>Thousands of views</strong> from developers worldwide!
+        </p>
+        
+        <div class="row video-highlights-grid">
+          <!-- Featured Video 1 -->
+          <div class="col-lg-4 col-sm-6 wow fadeInUp delay-03s">
+            <div class="video-highlight-card">
+              <a href="Videos.html" class="video-highlight-link" aria-label="Watch DevOps tutorial">
+                <div class="video-highlight-thumbnail">
+                  <img src="https://img.youtube.com/vi/uPw3BYkBL8w/maxresdefault.jpg" alt="Visual Studio Team Services Tutorial">
+                  <div class="video-highlight-overlay">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
+                  <span class="video-highlight-badge devops">DevOps</span>
+                </div>
+                <div class="video-highlight-info">
+                  <h3>Plan, Code Together, Ship Faster</h3>
+                  <p class="video-meta">
+                    <i class="fa fa-youtube-play"></i> Visual Studio Team Services
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Featured Video 2 -->
+          <div class="col-lg-4 col-sm-6 wow fadeInUp delay-05s">
+            <div class="video-highlight-card">
+              <a href="Videos.html" class="video-highlight-link" aria-label="Watch Azure tutorial">
+                <div class="video-highlight-thumbnail">
+                  <img src="https://img.youtube.com/vi/WuUivOtb9ps/maxresdefault.jpg" alt="Power BI with Azure DevOps">
+                  <div class="video-highlight-overlay">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
+                  <span class="video-highlight-badge azure">Azure</span>
+                </div>
+                <div class="video-highlight-info">
+                  <h3>Power BI with Azure DevOps</h3>
+                  <p class="video-meta">
+                    <i class="fa fa-clock-o"></i> 10 min quick tutorial
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Featured Video 3 -->
+          <div class="col-lg-4 col-sm-6 wow fadeInUp delay-08s">
+            <div class="video-highlight-card">
+              <a href="Videos.html" class="video-highlight-link" aria-label="Watch Web Development tutorial">
+                <div class="video-highlight-thumbnail">
+                  <img src="https://img.youtube.com/vi/ZQF_IOMlaxU/maxresdefault.jpg" alt="GitHub Pages Website Tutorial">
+                  <div class="video-highlight-overlay">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
+                  <span class="video-highlight-badge webdev">Web Dev</span>
+                </div>
+                <div class="video-highlight-info">
+                  <h3>Create Website in 5 Minutes</h3>
+                  <p class="video-meta">
+                    <i class="fa fa-github"></i> GitHub Pages Tutorial
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Videos CTA -->
+        <div class="videos-cta-section">
+          <a href="Videos.html" class="btn-videos-all" aria-label="View all video tutorials">
+            <i class="fa fa-youtube-play"></i> View All 6+ Video Tutorials
+            <i class="fa fa-arrow-right"></i>
+          </a>
+          <p class="videos-cta-text">
+            Learn from <strong>13+ years</strong> of industry experience | <strong>Microsoft Certified Trainer</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
      <section class="business-talking">
       <div class="container">
         <h2>Let’s Talk Business, Technology or Cricket</h2>
@@ -1572,18 +1341,29 @@
       <div class="container">
         <div class="footer-logo">
           <a aria-label="Footer logo"
-            ><img src="img/footer-logo.png" class="logo-img" alt=""
+            ><img src="img/footer-logo.png" class="logo-img" alt="Ketan Agnihotri Logo"
           /></a>
         </div>
+        <p class="footer-title">
+          <strong>Ketan Agnihotri</strong> | Senior Full Stack Engineer<br>
+          React, .NET Core, Azure Expert | Dubai, UAE & India
+        </p>
+        <p class="footer-links">
+          <a href="/" aria-label="Go to homepage">Home</a> |
+          <a href="/services.html" aria-label="View technical expertise and services">Technical Expertise</a> |
+          <a href="/blogs.html" aria-label="Read my technical blog posts">Blog</a> |
+          <a href="/Videos.html" aria-label="Watch my video tutorials">Videos</a> |
+          <a href="https://www.youtube.com/c/ketanagnihotri" target="_blank" rel="noopener" aria-label="Visit my YouTube channel">YouTube</a> |
+          <a href="https://www.linkedin.com/in/ketanagnihotri/" target="_blank" rel="noopener" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+        </p>
         <span class="copyright text-white"
-          >Copyright © 2025 Ketan Agnihotri | Senior Full Stack Engineer | Built
-          with
-          <i class="fa-heart text-red"></i>
-          <a
+          >© 2025 Ketan Agnihotri | Built with
+          <i class="fa-heart text-red" aria-hidden="true"></i>
+          by <a
             href="https://www.facebook.com/k10andsystems"
             title="K10 & Systems"
             aria-label="Visit K10 & Systems on Facebook"
-            >by K10 & Systems</a
+            >K10 & Systems</a
           >
         </span>
       </div>
@@ -1612,7 +1392,7 @@
             .stop()
             .animate(
               {
-                scrollTop: $($anchor.attr("href")).offset().top - 102,
+                scrollTop: $($anchor.attr("href")).offset().top - 60,
               },
               1500,
               "easeInOutExpo"
@@ -1656,6 +1436,44 @@
           $container.isotope({ filter: selector });
           return false;
         });
+      });
+
+      // Certification Filter Functionality
+      $(document).ready(function() {
+        // Filter button click handler
+        $('.cert-filter-btn').on('click', function() {
+          // Remove active class from all buttons
+          $('.cert-filter-btn').removeClass('active');
+          // Add active class to clicked button
+          $(this).addClass('active');
+          
+          var filter = $(this).data('filter');
+          
+          if (filter === '*') {
+            // Show all certification cards with fade animation
+            $('.cert-card').fadeOut(300, function() {
+              $(this).show().css('display', 'flex');
+            }).fadeIn(300);
+          } else {
+            // Hide all cards first
+            $('.cert-card').fadeOut(300, function() {
+              // Show only matching cards
+              $(filter).fadeIn(300, function() {
+                $(this).css('display', 'flex');
+              });
+            });
+          }
+        });
+
+        // Add data-delay attributes dynamically for WOW animations
+        $('.cert-card').each(function(index) {
+          $(this).attr('data-wow-delay', (index * 0.05) + 's');
+        });
+
+        // Re-initialize WOW.js for new elements
+        if (typeof WOW !== 'undefined') {
+          new WOW().init();
+        }
       });
     </script>
     <script>
@@ -1706,6 +1524,1168 @@
       .skillsHeading {
         font-size: 22px;
       }
+
+      /* ===== Video Tutorials Section Styles ===== */
+      #Videos {
+        padding: 60px 0;
+      }
+
+      #Videos h2 {
+        margin-bottom: 15px;
+      }
+
+      .videos-intro {
+        text-align: center;
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 50px;
+        line-height: 1.6;
+      }
+
+      .videos-intro strong {
+        color: #667eea;
+        font-weight: 600;
+      }
+
+      .video-highlights-grid {
+        margin-bottom: 40px;
+      }
+
+      .video-highlight-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        height: 100%;
+      }
+
+      .video-highlight-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.25);
+      }
+
+      .video-highlight-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+      .video-highlight-thumbnail {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        overflow: hidden;
+        background: #f0f0f0;
+      }
+
+      .video-highlight-thumbnail img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .video-highlight-card:hover .video-highlight-thumbnail img {
+        transform: scale(1.05);
+      }
+
+      .video-highlight-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .video-highlight-card:hover .video-highlight-overlay {
+        opacity: 1;
+      }
+
+      .video-highlight-overlay i {
+        font-size: 60px;
+        color: white;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .video-highlight-badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        z-index: 2;
+      }
+
+      .video-highlight-badge.devops {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+
+      .video-highlight-badge.azure {
+        background: linear-gradient(135deg, #0078d4, #00bcf2);
+      }
+
+      .video-highlight-badge.webdev {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+      }
+
+      .video-highlight-info {
+        padding: 20px;
+      }
+
+      .video-highlight-info h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 10px 0;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .video-highlight-info .video-meta {
+        font-size: 14px;
+        color: #777;
+        margin: 0;
+      }
+
+      .video-highlight-info .video-meta i {
+        color: #667eea;
+        margin-right: 5px;
+      }
+
+      /* Videos CTA Section */
+      .videos-cta-section {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 2px solid #eee;
+      }
+
+      .btn-videos-all {
+        display: inline-block;
+        padding: 16px 40px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white !important;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+      }
+
+      .btn-videos-all:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+      }
+
+      .btn-videos-all i.fa-youtube-play {
+        margin-right: 8px;
+      }
+
+      .btn-videos-all i.fa-arrow-right {
+        margin-left: 8px;
+      }
+
+      .videos-cta-text {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .videos-cta-text strong {
+        color: #667eea;
+        font-weight: 600;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .videos-intro {
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+
+        .video-highlight-info h3 {
+          font-size: 16px;
+        }
+
+        .btn-videos-all {
+          padding: 14px 30px;
+          font-size: 16px;
+        }
+
+        .video-highlight-overlay i {
+          font-size: 50px;
+        }
+      }
+
+      /* ===== Modern Action Buttons Grid ===== */
+      .action-buttons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+        max-width: 950px;
+        margin: 25px auto 35px;
+        padding: 0 15px;
+      }
+
+      .action-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 16px;
+        background: white;
+        border-radius: 12px;
+        border: 2px solid #e1e8ed;
+        text-decoration: none !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: visible;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+
+      .action-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 0;
+      }
+
+      .action-btn:hover::before {
+        opacity: 1;
+      }
+
+      .action-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        border-color: transparent;
+      }
+
+      .action-icon {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-size: 20px;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+        transition: transform 0.3s ease;
+      }
+
+      .action-btn:hover .action-icon {
+        transform: scale(1.1) rotate(-5deg);
+      }
+
+      .action-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        position: relative;
+        z-index: 1;
+        flex: 1;
+        overflow: hidden;
+      }
+
+      .action-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #14171a;
+        line-height: 1.2;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .action-subtitle {
+        font-size: 11px;
+        font-weight: 500;
+        color: #657786;
+        line-height: 1.2;
+        display: block;
+      }
+
+      /* Color Variants */
+      .action-primary .action-icon {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+      }
+
+      .action-primary:hover {
+        border-color: #667eea;
+      }
+
+      .action-primary:hover .action-title {
+        color: #667eea;
+      }
+
+      .action-secondary .action-icon {
+        background: linear-gradient(135deg, #24292e, #434d58);
+        color: white;
+      }
+
+      .action-secondary:hover {
+        border-color: #24292e;
+      }
+
+      .action-secondary:hover .action-title {
+        color: #24292e;
+      }
+
+      .action-accent .action-icon {
+        background: linear-gradient(135deg, #f093fb, #f5576c);
+        color: white;
+      }
+
+      .action-accent:hover {
+        border-color: #f093fb;
+      }
+
+      .action-accent:hover .action-title {
+        color: #f093fb;
+      }
+
+      .action-social .action-icon {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+      }
+
+      .action-social:hover {
+        border-color: #4facfe;
+      }
+
+      .action-social:hover .action-title {
+        color: #4facfe;
+      }
+
+      .action-tech .action-icon {
+        background: linear-gradient(135deg, #43e97b, #38f9d7);
+        color: white;
+      }
+
+      .action-tech:hover {
+        border-color: #43e97b;
+      }
+
+      .action-tech:hover .action-title {
+        color: #43e97b;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .action-buttons-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+          margin: 20px auto 30px;
+        }
+
+        .action-btn {
+          padding: 12px 14px;
+          gap: 10px;
+        }
+
+        .action-icon {
+          width: 38px;
+          height: 38px;
+          font-size: 18px;
+        }
+
+        .action-title {
+          font-size: 13px;
+        }
+
+        .action-subtitle {
+          font-size: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .action-buttons-grid {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+
+        .action-btn {
+          justify-content: center;
+        }
+      }
+
+      /* ===== Book Highlight Banner ===== */
+      .book-highlight-banner {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin: 30px auto 25px;
+        max-width: 950px;
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+      }
+
+      .book-banner-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .book-icon-wrapper {
+        background: rgba(255, 255, 255, 0.2);
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+
+      .book-icon-wrapper i {
+        font-size: 28px;
+        color: #fff;
+      }
+
+      .book-info {
+        flex: 1;
+        color: #fff;
+      }
+
+      .book-banner-title {
+        margin: 0 0 8px 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.3;
+      }
+
+      .book-banner-desc {
+        margin: 0;
+        font-size: 14px;
+        opacity: 0.95;
+        color: #fff;
+        line-height: 1.4;
+      }
+
+      .book-buy-btn {
+        background: #fff;
+        color: #667eea;
+        padding: 14px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .book-buy-btn:hover {
+        background: #f8f9fa;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        color: #764ba2;
+      }
+
+      .book-buy-btn i {
+        font-size: 18px;
+      }
+
+      @media (max-width: 768px) {
+        .book-highlight-banner {
+          padding: 20px;
+          margin: 30px auto 25px;
+        }
+
+        .book-banner-content {
+          flex-direction: column;
+          text-align: center;
+          gap: 16px;
+        }
+
+        .book-icon-wrapper {
+          width: 50px;
+          height: 50px;
+        }
+
+        .book-icon-wrapper i {
+          font-size: 24px;
+        }
+
+        .book-banner-title {
+          font-size: 18px;
+        }
+
+        .book-banner-desc {
+          font-size: 13px;
+        }
+
+        .book-buy-btn {
+          width: 100%;
+          justify-content: center;
+          padding: 12px 24px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .book-highlight-banner {
+          padding: 16px;
+          margin: 20px auto;
+          border-radius: 10px;
+        }
+
+        .book-banner-title {
+          font-size: 16px;
+        }
+
+        .book-banner-desc {
+          font-size: 12px;
+        }
+
+        .book-buy-btn {
+          font-size: 14px;
+          padding: 10px 20px;
+        }
+      }
+
+      /* ===== Hero Profile Section ===== */
+      .hero-profile-section {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        max-width: 1100px;
+        margin: 0 auto 30px;
+        padding: 0 20px;
+      }
+
+      .hero-content {
+        flex: 1;
+      }
+
+      .hero-main-title {
+        font-size: 42px;
+        font-weight: 800;
+        margin: 0 0 12px 0;
+        color: #fff;
+        line-height: 1.1;
+      }
+
+      .hero-tagline {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.95);
+        margin: 0 0 15px 0;
+        line-height: 1.5;
+      }
+
+      .hero-highlights {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .hero-highlights li {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+
+      .hero-profile-card {
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .profile-image-wrapper {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        margin: 0 auto 15px;
+      }
+
+      .profile-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-quick-links {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .profile-link {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+
+      .profile-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 992px) {
+        .hero-profile-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-main-title {
+          font-size: 36px;
+        }
+
+        .hero-tagline {
+          font-size: 16px;
+        }
+
+        .hero-highlights li {
+          font-size: 14px;
+        }
+
+        .profile-image-wrapper {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-main-title {
+          font-size: 32px;
+        }
+
+        .hero-tagline {
+          font-size: 15px;
+        }
+
+        .profile-image-wrapper {
+          width: 130px;
+          height: 130px;
+        }
+
+        .hero-profile-card {
+          padding: 20px;
+        }
+      }
+
+      /* ===== Modern Compact About Section ===== */
+      .about-section-modern {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px 30px;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        gap: 20px;
+      }
+
+      .about-card-modern {
+        background: #fff;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .about-heading {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 16px 0;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .about-heading i {
+        color: #667eea;
+      }
+
+      .about-content-compact p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 0 10px 0;
+        color: #555;
+      }
+
+      .about-content-compact p:last-child {
+        margin-bottom: 0;
+      }
+
+      .about-content-compact a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .about-content-compact a:hover {
+        color: #764ba2;
+        text-decoration: underline;
+      }
+
+      .value-list-compact {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .value-list-compact li {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        color: #555;
+      }
+
+      .value-list-compact li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: 700;
+      }
+
+      .sidebar-card {
+        background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+      }
+
+      .book-showcase {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .book-cover-image {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        margin-bottom: 12px;
+        transition: transform 0.3s ease;
+      }
+
+      .book-cover-image:hover {
+        transform: scale(1.05);
+      }
+
+      .book-buy-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+
+      .book-buy-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      .connect-heading {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 20px 0 12px 0;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .connect-heading i {
+        color: #0077b5;
+      }
+
+      @media (max-width: 992px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar-card {
+          order: -1;
+        }
+
+        .book-showcase {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .book-cover-image {
+          max-width: 150px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .about-card-modern {
+          padding: 20px;
+        }
+
+        .about-heading {
+          font-size: 20px;
+        }
+
+        .about-content-compact p,
+        .value-list-compact li {
+          font-size: 13px;
+        }
+
+        .book-showcase {
+          flex-direction: column;
+        }
+      }
+
+      /* ===== Certification Section - SUPER COMPACT TABLE STYLE ===== */
+      #Certification {
+        padding: 25px 0;
+        background: #fafbfc;
+      }
+
+      /* Header Row */
+      .cert-header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .cert-header-row h2 {
+        font-size: 26px;
+        margin: 0;
+        color: #333;
+      }
+
+      .cert-header-row h2 i {
+        color: #667eea;
+        margin-right: 8px;
+      }
+
+      /* Count Pills */
+      .cert-count-badges {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .count-pill {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+      }
+
+      .azure-pill {
+        background: linear-gradient(135deg, #0078d4, #00bcf2);
+      }
+
+      .dev-pill {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+
+      .mct-pill {
+        background: linear-gradient(135deg, #f093fb, #f5576c);
+      }
+
+      .db-pill {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+      }
+
+      /* Filter Tabs */
+      .cert-filter-tabs {
+        text-align: center;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e1e4e8;
+      }
+
+      .filter-tab {
+        background: none;
+        border: none;
+        color: #586069;
+        padding: 6px 14px;
+        margin: 0 4px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border-bottom: 3px solid transparent;
+        position: relative;
+        top: 2px;
+      }
+
+      .filter-tab:hover {
+        color: #0366d6;
+      }
+
+      .filter-tab.active {
+        color: #0366d6;
+        border-bottom-color: #0366d6;
+      }
+
+      /* Super Compact Table */
+      .cert-table {
+        background: white;
+        border-radius: 6px;
+        border: 1px solid #e1e4e8;
+        overflow: hidden;
+      }
+
+      .cert-row {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        gap: 12px;
+        border-bottom: 1px solid #f6f8fa;
+        transition: background 0.2s ease;
+      }
+
+      .cert-row:last-child {
+        border-bottom: none;
+      }
+
+      .cert-row:hover {
+        background: #f6f8fa;
+      }
+
+      .cert-row.featured {
+        background: linear-gradient(to right, #fff5f5, white);
+        border-left: 3px solid #667eea;
+      }
+
+      .cert-row.hidden {
+        display: none;
+      }
+
+      /* Small Icon */
+      .cert-icon-sm {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 16px;
+        color: white;
+      }
+
+      .azure-bg {
+        background: linear-gradient(135deg, #0078d4, #00bcf2);
+      }
+
+      .dev-bg {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+
+      .db-bg {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+      }
+
+      .edu-bg {
+        background: linear-gradient(135deg, #f093fb, #f5576c);
+      }
+
+      /* Content */
+      .cert-content {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .cert-content strong {
+        display: block;
+        font-size: 14px;
+        color: #24292e;
+        font-weight: 600;
+        margin-bottom: 2px;
+        line-height: 1.3;
+      }
+
+      .cert-meta {
+        display: block;
+        font-size: 12px;
+        color: #586069;
+      }
+
+      /* Compact Badges */
+      .cert-badge {
+        padding: 3px 8px;
+        border-radius: 10px;
+        font-size: 11px;
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+
+      .mct-badge {
+        background: linear-gradient(135deg, #f093fb, #f5576c);
+        color: white;
+      }
+
+      .active-badge {
+        background: #d4edda;
+        color: #155724;
+      }
+
+      .legacy-badge {
+        background: #f5f5f5;
+        color: #888;
+      }
+
+      /* Footer Links */
+      .cert-footer-links {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #e1e4e8;
+      }
+
+      .cert-footer-links a {
+        display: inline-block;
+        color: #0366d6 !important;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 6px 12px;
+        margin: 4px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background 0.2s ease;
+      }
+
+      .cert-footer-links a:hover {
+        background: #f6f8fa;
+      }
+
+      .cert-footer-links a i {
+        margin-right: 5px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        #Certification {
+          padding: 20px 0;
+        }
+
+        .cert-header-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .cert-header-row h2 {
+          font-size: 22px;
+        }
+
+        .filter-tab {
+          font-size: 13px;
+          padding: 5px 10px;
+        }
+
+        .cert-row {
+          padding: 10px;
+          gap: 10px;
+        }
+
+        .cert-icon-sm {
+          width: 32px;
+          height: 32px;
+          font-size: 14px;
+        }
+
+        .cert-content strong {
+          font-size: 13px;
+        }
+
+        .cert-meta {
+          font-size: 11px;
+        }
+
+        .cert-badge {
+          font-size: 10px;
+          padding: 2px 6px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .count-pill {
+          font-size: 11px;
+          padding: 3px 8px;
+        }
+
+        .filter-tab {
+          font-size: 12px;
+          padding: 4px 8px;
+          margin: 0 2px;
+        }
+
+        .cert-row {
+          flex-wrap: wrap;
+        }
+
+        .cert-badge {
+          margin-left: 48px;
+        }
+
+        .cert-footer-links a {
+          display: block;
+          margin: 5px auto;
+          max-width: 200px;
+        }
+      }
     </style>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -1731,6 +2711,43 @@
     
     <!-- Back to Top Button Script -->
     <script>
+      // Certification Filter Function
+      function filterCerts(category) {
+        // Get all cert rows
+        const rows = document.querySelectorAll('.cert-row');
+        // Get all filter tabs
+        const tabs = document.querySelectorAll('.filter-tab');
+        
+        // Remove active class from all tabs
+        tabs.forEach(tab => tab.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        event.target.classList.add('active');
+        
+        // Show/hide rows based on category
+        rows.forEach(row => {
+          if (category === 'all') {
+            row.style.display = 'flex';
+          } else if (row.dataset.category === category) {
+            row.style.display = 'flex';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      }
+      
+      // Show Azure certifications by default on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        const rows = document.querySelectorAll('.cert-row');
+        rows.forEach(row => {
+          if (row.dataset.category === 'azure-cert') {
+            row.style.display = 'flex';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+      
       // Back to top button functionality
       (function() {
         const backToTopBtn = document.querySelector('.back-to-top');
