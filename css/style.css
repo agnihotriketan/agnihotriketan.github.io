@@ -909,13 +909,24 @@ img {
 ---------------------------------*/
 
 .footer {
-    background: url(../img/pw_maze_black_2X.jpg) left top repeat;
-    padding: 35px 0 35px;
+    background: #1a1a1a;
+    padding: 50px 0 35px;
+    border-top: 3px solid #0d90e5;
 }
 
 .footer-logo {
-    margin: 15px auto 35px;
+    margin: 15px auto 25px;
     width: 76px;
+}
+
+.footer .footer-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.footer .footer-links {
+    margin-bottom: 15px;
 }
 
 .copyright {
@@ -923,6 +934,7 @@ img {
     font-size: 14px;
     display: block;
     text-align: center;
+    line-height: 1.8;
 }
 
     .copyright a {
@@ -935,8 +947,12 @@ img {
     }
 
         .copyright a:hover {
-            color: #fff;
+            color: #2eaaff;
         }
+
+    .copyright .text-red {
+        color: #e74c3c;
+    }
 
 .res-nav_click {
     line-height: 38px;

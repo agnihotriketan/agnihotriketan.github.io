@@ -221,7 +221,7 @@
           "addressLocality": "Dubai",
           "addressCountry": "UAE"
         },
-        "email": "mailto:contact@k10.in",
+        "email": "mailto:agnihotriketan@gmail.com",
         "description": "Senior Full Stack Engineer with 13+ years of experience specializing in React, .NET Core, Azure, and Microservices. Ex-Microsoft SDE2, currently at NAC Dubai. Published author of 2 technical books. Available for consulting and freelance projects.",
         "offers": {
           "@type": "Offer",
@@ -379,6 +379,7 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
     <!--[if IE
       ]><style type="text/css">
         .pie {
@@ -410,276 +411,6 @@
       });
     </script>-->
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9607849093628299" crossorigin="anonymous"></script>
-
-    <!-- Modern Header Background Styling -->
-    <style>
-      /* Modern gradient background matching your brand colors (#0d90e5 to #ffffff) */
-      .header {
-        text-align: center;
-        background: linear-gradient(
-          135deg,
-          #0d90e5 0%,
-          #1a9ef0 20%,
-          #2eaaff 40%,
-          #5ac8ff 60%,
-          #8fddff 80%,
-          #d4f1ff 90%,
-          #ffffff 100%
-        );
-        background-size: 400% 400%;
-        animation: gradientShift 15s ease infinite;
-        padding: 20px 0;
-        position: relative;
-        overflow: hidden;
-      }
-
-      /* Animated gradient background */
-      @keyframes gradientShift {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      /* Add subtle overlay pattern */
-      .header::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: radial-gradient(
-            circle at 20% 50%,
-            rgba(255, 255, 255, 0.1) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 80% 80%,
-            rgba(255, 255, 255, 0.1) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 40% 20%,
-            rgba(255, 255, 255, 0.05) 0%,
-            transparent 50%
-          );
-        animation: floatingShapes 20s ease-in-out infinite;
-        pointer-events: none;
-      }
-
-      @keyframes floatingShapes {
-        0%,
-        100% {
-          transform: translateY(0) scale(1);
-        }
-        50% {
-          transform: translateY(-20px) scale(1.05);
-        }
-      }
-
-      /* Animated particles effect */
-      .header::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: radial-gradient(
-            2px 2px at 20% 30%,
-            white,
-            transparent
-          ),
-          radial-gradient(2px 2px at 60% 70%, white, transparent),
-          radial-gradient(1px 1px at 50% 50%, white, transparent),
-          radial-gradient(1px 1px at 80% 10%, white, transparent),
-          radial-gradient(2px 2px at 90% 60%, white, transparent),
-          radial-gradient(1px 1px at 33% 90%, white, transparent),
-          radial-gradient(2px 2px at 10% 80%, white, transparent);
-        background-size: 200% 200%;
-        animation: particleFloat 30s linear infinite;
-        opacity: 0.3;
-        pointer-events: none;
-      }
-
-      @keyframes particleFloat {
-        0% {
-          background-position: 0% 0%;
-        }
-        100% {
-          background-position: 100% 100%;
-        }
-      }
-
-      /* Alternative: Mesh Gradient (Modern Design Trend 2024-2025) */
-      .header.mesh-gradient {
-        background: radial-gradient(
-            at 27% 37%,
-            hsla(215, 98%, 61%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 97% 21%,
-            hsla(125, 98%, 72%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 52% 99%,
-            hsla(354, 98%, 61%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 10% 29%,
-            hsla(256, 96%, 67%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 97% 96%,
-            hsla(38, 60%, 74%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 33% 50%,
-            hsla(222, 67%, 73%, 1) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 79% 53%,
-            hsla(343, 68%, 79%, 1) 0px,
-            transparent 50%
-          );
-        animation: meshMove 20s ease infinite;
-      }
-
-      @keyframes meshMove {
-        0%,
-        100% {
-          filter: hue-rotate(0deg);
-        }
-        50% {
-          filter: hue-rotate(45deg);
-        }
-      }
-
-      /* Alternative: Tech-focused Dark Theme */
-      .header.tech-dark {
-        background: linear-gradient(
-            to bottom,
-            rgba(10, 10, 35, 0.95),
-            rgba(20, 20, 50, 0.98)
-          ),
-          url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234facfe' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        background-blend-mode: overlay;
-      }
-
-      .header.tech-dark::before {
-        background: linear-gradient(
-          45deg,
-          transparent 30%,
-          rgba(79, 172, 254, 0.1) 50%,
-          transparent 70%
-        );
-        animation: techScan 8s linear infinite;
-      }
-
-      @keyframes techScan {
-        0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(200%);
-        }
-      }
-
-      /* Alternative: Glassmorphism Style */
-      .header.glass {
-        background: rgba(255, 255, 255, 0.1);
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      }
-
-      .header.glass::before {
-        background: linear-gradient(
-          135deg,
-          rgba(255, 255, 255, 0.2) 0%,
-          rgba(255, 255, 255, 0) 100%
-        );
-      }
-
-      /* Make header content pop above the animated background */
-      .header > * {
-        position: relative;
-        z-index: 1;
-      }
-
-      /* Clean & Simple About Me Section */
-      .about-me-section {
-        text-align: left !important;
-      }
-
-      .about-me-section h2 {
-        font-size: 24px !important;
-        margin-bottom: 20px !important;
-        font-weight: 500 !important;
-        text-align: left !important;
-      }
-
-      .about-me-section p {
-        font-size: 15px !important;
-        line-height: 1.6 !important;
-        margin-bottom: 12px !important;
-        text-align: left !important;
-      }
-
-      .about-me-section a {
-        color: #0d90e5 !important;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .about-me-section a:hover {
-        color: #ffffff !important;
-      }
-
-      /* Simple card styling */
-      .about-card {
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 12px;
-        padding: 25px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        margin-bottom: 20px;
-      }
-
-      /* Clean button styling */
-      .link {
-        background: #0d90e5 !important;
-        color: white !important;
-        padding: 10px 24px !important;
-        border-radius: 6px !important;
-        text-decoration: none !important;
-        display: inline-block !important;
-        margin: 8px 8px 8px 0 !important;
-        font-weight: 500 !important;
-        transition: all 0.2s ease !important;
-      }
-
-      .link:hover {
-        background: #ffffff !important;
-        color: #0d90e5 !important;
-      }
-
-      .link i {
-        margin-right: 6px;
-      }
-    </style>
   </head>
   <body>
     <!-- Skip to main content for accessibility -->
@@ -798,6 +529,22 @@
               <br />
               📚 Author of 2 Books | Microsoft Certified Trainer (MCT) 2020-2022
               | 13+ Years Experience
+            </li>
+          </ul>
+          <a
+            class="link animated fadeInUp delay-1s servicelink"
+            href="https://linktr.ee/agnihotriketan"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit Ketan's Linktree"
+            ><i class="fa fa-link"></i>Connect with Me</a
+          >
+          <a
+            class="link animated fadeInUp delay-1s servicelink tech-expertise"
+            href="services.html"
+            aria-label="View Technical Expertise"
+            ><i class="fa fa-code"></i>Technical Expertise</a
+          >
             </li>
           </ul>
           <div class="row">
@@ -1572,13 +1319,25 @@
       <div class="container">
         <div class="footer-logo">
           <a aria-label="Footer logo"
-            ><img src="img/footer-logo.png" class="logo-img" alt=""
+            ><img src="img/footer-logo.png" class="logo-img" alt="Ketan Agnihotri Logo"
           /></a>
         </div>
+        <p class="footer-title">
+          <strong>Ketan Agnihotri</strong> | Senior Full Stack Engineer<br>
+          React, .NET Core, Azure Expert | Dubai, UAE & India
+        </p>
+        <p class="footer-links">
+          <a href="/" aria-label="Go to homepage">Home</a> |
+          <a href="/services.html" aria-label="View technical expertise and services">Technical Expertise</a> |
+          <a href="/blogs.html" aria-label="Read my technical blog posts">Blog</a> |
+          <a href="/Videos.html" aria-label="Watch my video tutorials">Videos</a> |
+          <a href="https://www.youtube.com/c/ketanagnihotri" target="_blank" rel="noopener" aria-label="Visit my YouTube channel">YouTube</a> |
+          <a href="https://www.linkedin.com/in/ketanagnihotri/" target="_blank" rel="noopener" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+        </p>
         <span class="copyright text-white"
-          >Copyright © 2025 Ketan Agnihotri | Senior Full Stack Engineer | Built
+          >Copyright © 2025 Ketan Agnihotri. All rights reserved. | Built
           with
-          <i class="fa-heart text-red"></i>
+          <i class="fa-heart text-red" aria-hidden="true"></i>
           <a
             href="https://www.facebook.com/k10andsystems"
             title="K10 & Systems"
