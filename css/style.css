@@ -175,8 +175,7 @@ p {
 .we-create li {
     display: inline-block;
     font-family: 'Space Grotesk', 'Inter', sans-serif;
-    font-size: 14px;
-    color: #bcbcbc;
+    font-size: 14px; 
     text-transform: uppercase;
     font-weight: 400;
     margin: 0 5px 0 0;
