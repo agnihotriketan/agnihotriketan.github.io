@@ -1066,7 +1066,7 @@ img {
 }
 
 .header-intro-text {
-    color: #222222;
+    color: #222222 !important;
     font-size: 17px;
 }
 
