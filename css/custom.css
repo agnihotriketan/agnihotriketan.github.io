@@ -8,23 +8,15 @@
    ======================================== */
 
 /* Modern gradient background matching brand colors (#0d90e5 to #ffffff) */
-.header {
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #0d90e5 0%,
-        #1a9ef0 20%,
-        #2eaaff 40%,
-        #5ac8ff 60%,
-        #8fddff 80%,
-        #d4f1ff 90%,
-        #ffffff 100%
-    );
+.header { 
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
-    padding: 10px 0;
+    animation: gradientShift 15s ease infinite;  
     position: relative;
     overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 60px 0 50px;
+    color: white;
+    text-align: center;
 }
 
 /* Reduce side padding in header to use more width */

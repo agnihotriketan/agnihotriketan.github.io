@@ -73,6 +73,538 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
+    
+    <style>
+      /* ===== Modern Unified Styling ===== */
+      body {
+        font-family: 'Open Sans', 'Segoe UI', sans-serif;
+        color: #333;
+        line-height: 1.6;
+        background: #ffffff;
+      }
+      
+      .overflow-hidden {
+        overflow-x: hidden;
+      }
+      
+      /* Navigation */
+      .main-nav-outer {
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      
+      .main-nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .main-nav li {
+        margin: 0;
+      }
+      
+      .main-nav li a {
+        padding: 15px 12px;
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      
+      .main-nav li a:hover {
+        color: #667eea;
+      }
+      
+      .main-nav li a i {
+        margin-right: 5px;
+      }
+      
+      .small-logo-img {
+        height: 40px;
+        width: auto;
+      }
+      
+      .res-nav_click {
+        display: none;
+        cursor: pointer;
+        padding: 15px;
+        color: #333;
+      }
+      
+      /* Hero Section */
+      .services-hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 80px 0 60px;
+        text-align: center;
+      }
+      
+      .services-hero h1 {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: white;
+      }
+      
+      .services-hero p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: rgba(255, 255, 255, 0.95);
+      }
+      
+      .services-hero .subtitle {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 30px;
+      }
+      
+      .cta-button {
+        display: inline-block;
+        padding: 14px 32px;
+        background: white;
+        color: #667eea !important;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 8px;
+        text-decoration: none;
+        margin: 5px 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+      }
+      
+      .cta-white {
+        background: transparent;
+        color: white !important;
+        border: 2px solid white;
+      }
+      
+      .cta-white:hover {
+        background: white;
+        color: #667eea !important;
+      }
+      
+      /* Trust Bar */
+      .trust-bar {
+        background: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #e1e8ed;
+      }
+      
+      .trust-bar p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+      }
+      
+      /* Section Styling */
+      .section-padding {
+        padding: 60px 0;
+      }
+      
+      .section-bg-light {
+        background: #f8f9fa;
+        padding: 60px 0;
+      }
+      
+      .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      
+      .section-title h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .section-title p {
+        font-size: 16px;
+        color: #666;
+      }
+      
+      .section-title-white {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 40px;
+      }
+      
+      .section-title-dark {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 40px;
+      }
+      
+      /* Service Cards */
+      .service-card {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+      
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: white;
+      }
+      
+      .service-card h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      
+      .service-card p {
+        font-size: 15px;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      
+      .tech-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 15px;
+      }
+      
+      .tech-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 14px;
+        color: #555;
+      }
+      
+      .tech-list li:last-child {
+        border-bottom: none;
+      }
+      
+      .tech-list strong {
+        color: #667eea;
+        font-weight: 600;
+      }
+      
+      .experience-note {
+        font-size: 13px;
+        color: #888;
+        font-style: italic;
+        margin-top: 15px;
+      }
+      
+      /* Why Me Section */
+      .why-me {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 0;
+      }
+      
+      .why-item {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .why-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        font-size: 36px;
+        color: white;
+      }
+      
+      .why-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 15px;
+      }
+      
+      .why-text {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      
+      /* Featured Card */
+      .featured {
+        position: relative;
+        border: 2px solid #667eea;
+      }
+      
+      .featured-badge {
+        position: absolute;
+        top: -15px;
+        right: 20px;
+        background: #667eea;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      
+      .card-subtitle {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      
+      .tech-list-plain {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+      }
+      
+      .tech-list-plain li {
+        padding: 8px 0;
+        font-size: 14px;
+        color: #555;
+      }
+      
+      .card-note {
+        font-size: 13px;
+        color: #888;
+        font-style: italic;
+        margin-top: 20px;
+      }
+      
+      .margin-top-large {
+        margin-top: 50px;
+      }
+      
+      /* Pricing Highlight */
+      .pricing-highlight {
+        background: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 25px 30px;
+        border-radius: 8px;
+      }
+      
+      .pricing-highlight h3 {
+        font-size: 20px;
+        color: #856404;
+        margin-bottom: 15px;
+      }
+      
+      .pricing-highlight p {
+        font-size: 15px;
+        color: #856404;
+        margin: 0;
+        line-height: 1.8;
+      }
+      
+      /* Approach Section */
+      .approach-item {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .approach-number {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        font-size: 28px;
+        font-weight: 700;
+        color: white;
+      }
+      
+      .approach-item h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .approach-item p {
+        font-size: 14px;
+        color: #666;
+      }
+      
+      /* Contact Section */
+      .contact-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+      }
+      
+      .contact-section h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 15px;
+      }
+      
+      .contact-section p {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 30px;
+      }
+      
+      .contact-buttons {
+        margin-bottom: 20px;
+      }
+      
+      .cta-large {
+        font-size: 16px;
+        padding: 16px 40px;
+      }
+      
+      .cta-linkedin {
+        background: #0077b5;
+        color: white !important;
+        border: none;
+      }
+      
+      .cta-linkedin:hover {
+        background: #005885;
+      }
+      
+      .cta-linktree {
+        background: #43e55e;
+        color: #333 !important;
+        border: none;
+      }
+      
+      .cta-linktree:hover {
+        background: #2ecc4d;
+      }
+      
+      /* Footer */
+      footer {
+        background: #2c3e50;
+        color: white;
+        padding: 40px 0 30px;
+        text-align: center;
+      }
+      
+      .footer-logo-container {
+        margin-bottom: 20px;
+      }
+      
+      .footer-logo-img {
+        height: 50px;
+        width: auto;
+      }
+      
+      .footer-title {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 15px;
+      }
+      
+      .footer-links {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      
+      .footer-links a {
+        color: #bbb;
+        text-decoration: none;
+        margin: 0 5px;
+        transition: color 0.3s ease;
+      }
+      
+      .footer-links a:hover {
+        color: white;
+        text-decoration: none;
+      }
+      
+      .footer-credits {
+        font-size: 13px;
+        color: #bbb;
+      }
+      
+      .footer-credits a {
+        color: #667eea;
+        text-decoration: none;
+      }
+      
+      .footer-credits a:hover {
+        color: #764ba2;
+      }
+      
+      .footer-heart {
+        color: #e74c3c;
+      }
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .main-nav {
+          display: none;
+        }
+        
+        .res-nav_click {
+          display: block;
+        }
+        
+        .services-hero h1 {
+          font-size: 32px;
+        }
+        
+        .services-hero p {
+          font-size: 16px;
+        }
+        
+        .section-title h2,
+        .section-title-white,
+        .section-title-dark {
+          font-size: 28px;
+        }
+        
+        .service-card {
+          padding: 20px;
+        }
+        
+        .contact-section h2 {
+          font-size: 28px;
+        }
+      }
+    </style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -80,6 +612,62 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K876N3D"
                 height="0" width="0" class="gtm-noscript"></iframe>
     </noscript>
+    
+    <!-- Navigation Header -->
+    <div class="overflow-hidden">
+      <nav class="main-nav-outer" id="test">
+        <div class="container">
+          <ul class="main-nav">
+            <li class="small-logo" title="Ketan Agnihotri">
+              <a href="index.html" aria-label="Ketan Agnihotri Logo - Go to homepage">
+                <img src="img/small-logo.png" alt="Ketan Agnihotri Logo - Senior Full Stack Engineer" class="small-logo-img" />
+              </a>
+            </li>
+            <li>
+              <a href="index.html#header" title="About Ketan" aria-label="About Ketan">About Ketan</a>
+            </li>
+            <li>
+              <a href="index.html#Certification" title="Certifications" aria-label="Certifications">
+                <i class="fa-certificate"></i>Certifications
+              </a>
+            </li>
+            <li>
+              <a href="index.html#Experience" title="Experience" aria-label="Experience">
+                <i class="fa-briefcase"></i>Experience
+              </a>
+            </li>
+            <li>
+              <a href="index.html#Book" title="Book" aria-label="My Books">
+                <i class="fa-book"></i>My Books
+              </a>
+            </li>
+            <li>
+              <a href="Videos.html" title="Videos" aria-label="Videos">
+                <i class="fa-youtube-play"></i>Videos
+              </a>
+            </li>
+            <li>
+              <a href="https://k10.in/blogs.html" title="Blogs" target="_blank" rel="noopener" aria-label="Blogs">
+                <i class="fa-comment"></i>Blogs
+              </a>
+            </li>
+            <li>
+              <a href="index.html#contact" title="Contact Me" aria-label="Contact Me">
+                <i class="fa-map-marker"></i>Contact
+              </a>
+            </li>
+            <li>
+              <a href="https://leetcode.com/agnihotriketan/" target="_blank" rel="noopener" title="My Leetcode" aria-label="My LeetCode Profile">
+                <i class="fa-code"></i>LeetCode
+              </a>
+            </li>
+          </ul>
+          <a class="res-nav_click" aria-label="Toggle navigation menu">
+            <i class="fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
     
     <!-- Hero Section -->
     <section class="services-hero">
