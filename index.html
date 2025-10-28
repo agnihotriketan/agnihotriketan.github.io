@@ -677,6 +677,82 @@
         </div>
       </div>
     </section>
+
+    <!-- Skills & Tech Stack Section - Ultra Compact -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <h2 class="skills-title"><i class="fa fa-code"></i> Tech Stack</h2>
+        
+        <div class="skills-ultra-compact">
+          <div class="skill-row">
+            <span class="skill-category-label"><i class="fa fa-desktop"></i> Frontend</span>
+            <div class="skill-pills">
+              <span class="pill primary">React</span>
+              <span class="pill primary">TypeScript</span>
+              <span class="pill primary">Next.js</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">React Native</span>
+              <span class="pill">Redux</span>
+              <span class="pill">HTML5/CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-category-label"><i class="fa fa-server"></i> Backend</span>
+            <div class="skill-pills">
+              <span class="pill primary">.NET Core / .NET 8</span>
+              <span class="pill primary">C#</span>
+              <span class="pill primary">ASP.NET Core</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Web API</span>
+              <span class="pill">REST/GraphQL</span>
+              <span class="pill">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-category-label"><i class="fa fa-cloud"></i> Cloud</span>
+            <div class="skill-pills">
+              <span class="pill primary">Azure</span>
+              <span class="pill primary">Azure DevOps</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Kubernetes</span>
+              <span class="pill">CI/CD</span>
+              <span class="pill">Terraform</span>
+              <span class="pill">Functions</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-category-label"><i class="fa fa-database"></i> Data</span>
+            <div class="skill-pills">
+              <span class="pill primary">SQL Server</span>
+              <span class="pill">Cosmos DB</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">Redis</span>
+              <span class="pill">EF Core</span>
+              <span class="pill">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-category-label"><i class="fa fa-cube"></i> Architecture</span>
+            <div class="skill-pills">
+              <span class="pill">Microservices</span>
+              <span class="pill">Event-Driven</span>
+              <span class="pill">CQRS</span>
+              <span class="pill">Clean Code</span>
+              <span class="pill">Azure OpenAI</span>
+              <span class="pill">SignalR</span>
+              <span class="pill">OAuth2</span>
+              <span class="pill">Agile</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section class="main-section" id="Certification">
       <div class="container">
         <div class="cert-header-row">
@@ -2715,6 +2791,172 @@
         }
       }
 
+      /* ===== Skills & Tech Stack - Compact Modern Design ===== */
+      .skills-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        padding: 30px 0;
+        position: relative;
+      }
+
+      .skills-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #667eea, transparent);
+      }
+
+      .skills-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .skills-title i {
+        color: #667eea;
+      }
+
+      .skills-ultra-compact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 18px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(102, 126, 234, 0.1);
+      }
+
+      .skill-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: 10px;
+      }
+
+      .skill-row:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .skill-category-label {
+        min-width: 100px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #4a5568;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+      }
+
+      .skill-category-label i {
+        color: #667eea;
+        font-size: 14px;
+      }
+
+      .skill-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        flex: 1;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 4px 10px;
+        background: #f8f9fa;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        font-size: 11.5px;
+        font-weight: 500;
+        color: #555;
+        transition: all 0.2s ease;
+        white-space: nowrap;
+      }
+
+      .pill.primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        border-color: transparent;
+        font-weight: 600;
+        box-shadow: 0 2px 6px rgba(102, 126, 234, 0.25);
+      }
+
+      .pill:not(.primary):hover {
+        background: #667eea;
+        color: #fff;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+        border-color: transparent;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .skills-ultra-compact {
+          padding: 15px;
+          gap: 10px;
+        }
+        
+        .skill-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+          padding-bottom: 10px;
+        }
+        
+        .skill-category-label {
+          min-width: auto;
+          font-size: 12.5px;
+        }
+        
+        .skill-pills {
+          gap: 5px;
+        }
+        
+        .pill {
+          font-size: 11px;
+          padding: 3px 9px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .skills-section {
+          padding: 25px 0;
+        }
+        
+        .skills-title {
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+        
+        .skills-ultra-compact {
+          padding: 12px;
+        }
+      }
+
+        .skill-group {
+          padding: 15px;
+        }
+
+        .skill-group h3 {
+          font-size: 15px;
+        }
+
+        .skill-tag {
+        .skills-ultra-compact {
+          padding: 12px;
+        }
+      }
+
       /* ===== Certification Section - SUPER COMPACT TABLE STYLE ===== */
       #Certification {
         padding: 25px 0;
@@ -3422,6 +3664,35 @@
           }
         });
       }
+
+      // 8. Skills Section - Ultra Compact Fade In
+      (function() {
+        const skillRows = document.querySelectorAll('.skill-row');
+        if (skillRows.length === 0) return;
+
+        const skillsObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateX(0)';
+              }, index * 80);
+              skillsObserver.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -30px 0px'
+        });
+
+        // Set initial state and observe
+        skillRows.forEach(row => {
+          row.style.opacity = '0';
+          row.style.transform = 'translateX(-20px)';
+          row.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+          skillsObserver.observe(row);
+        });
+      })();
     </script>
     
     <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
