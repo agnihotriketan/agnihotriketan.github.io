@@ -9,8 +9,8 @@
   <!-- Homepage -->
   <url>
     <loc>https://k10.in/</loc>
-    <lastmod>2025-10-27</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://k10.in/img/ketanLinkedinWhite.png</image:loc>
@@ -22,17 +22,17 @@
   <!-- Services Page -->
   <url>
     <loc>https://k10.in/services</loc>
-    <lastmod>2025-10-27</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.98</priority>
   </url>
   
   <!-- Blogs Page -->
   <url>
     <loc>https://k10.in/blogs</loc>
-    <lastmod>2025-10-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
   </url>
   
   <!-- About/Bio Section -->
