@@ -3,6 +3,11 @@
    Common styles used across index.html and services.html
    ======================================== */
 
+/* Font Optimization - Ensure fonts load quickly */
+@font-face {
+    font-display: swap;
+}
+
 /* ========================================
    SOCIAL MEDIA RIBBON (Top Bar) - Modern Dark UI - Compact & Sticky
    ======================================== */

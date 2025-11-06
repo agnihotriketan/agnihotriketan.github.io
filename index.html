@@ -453,13 +453,31 @@
       type="text/css"
     />
 
-    <!-- CSS Files -->
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://img.youtube.com" />
+    <link rel="preconnect" href="https://platform.linkedin.com" />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://img.youtube.com" />
+    <link rel="dns-prefetch" href="https://platform.linkedin.com" />
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+
+    <!-- Critical CSS - Inline for fastest render -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Preload critical font -->
+    <link rel="preload" href="css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="css/font-awesome.css" /></noscript>
+    
+    <!-- Critical animation CSS - Load immediately for WOW.js -->
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Defer non-critical CSS -->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <noscript><link href="css/custom.css" rel="stylesheet" type="text/css" /></noscript>
 
     <!--[if IE
       ]><style type="text/css">
@@ -469,14 +487,16 @@
       </style><!
     [endif]-->
 
-    <!-- JavaScript Files -->
-    <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/classie.js"></script>
+    <!-- Critical JavaScript for animations - Load blocking to ensure availability -->
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.js"></script>
+    
+    <!-- Defer non-critical JavaScript -->
+    <script defer src="js/bootstrap.js"></script>
+    <script defer src="js/jquery-scrolltofixed.js"></script>
+    <script defer src="js/jquery.easing.1.3.js"></script>
+    <script defer src="js/jquery.isotope.js"></script>
+    <script defer src="js/classie.js"></script>
 
     <!--[if lt IE 9]>
       <script src="js/respond-1.1.0.min.js"></script>
@@ -484,23 +504,14 @@
       <script src="js/html5element.js"></script>
     <![endif]-->
 
+    <!-- Async third-party scripts -->
     <script
-      type="text/javascript"
+      async
+      defer
       src="https://platform.linkedin.com/badges/js/profile.js"
-      async=""
-      defer=""
     ></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('.header').ripples({
-          resolution: 256,
-          perturbance: 0.04
-        });
-      });
-    </script>-->
     <script
-      async=""
+      async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9607849093628299"
       crossorigin="anonymous"
     ></script>
@@ -595,6 +606,8 @@
                   src="img/small-logo.png"
                   alt="Ketan Agnihotri Logo - Senior Full Stack Engineer"
                   class="small-logo-img"
+                  width="26"
+                  height="26"
               /></a>
             </li>
             <li class="nav-brand">
@@ -680,6 +693,10 @@
                   src="img/ketanLinkedinWhite.png"
                   class="profile-image"
                   alt="Ketan Agnihotri - Senior Full Stack Engineer - React, .NET Core, Azure Expert"
+                  width="200"
+                  height="200"
+                  loading="eager"
+                  fetchpriority="high"
                 />
               </div>
             </div>
@@ -1356,6 +1373,8 @@
                     src="https://img.youtube.com/vi/uPw3BYkBL8w/maxresdefault.jpg"
                     alt="Visual Studio Team Services Tutorial"
                     loading="lazy"
+                    width="1280"
+                    height="720"
                   />
                   <div class="video-highlight-overlay">
                     <i class="fa fa-play-circle"></i>
@@ -1386,6 +1405,8 @@
                     src="https://img.youtube.com/vi/WuUivOtb9ps/maxresdefault.jpg"
                     alt="Power BI with Azure DevOps"
                     loading="lazy"
+                    width="1280"
+                    height="720"
                   />
                   <div class="video-highlight-overlay">
                     <i class="fa fa-play-circle"></i>
@@ -1412,9 +1433,11 @@
               >
                 <div class="video-highlight-thumbnail">
                   <img
-                    src="https://img.youtube.com/vi/ZQF_IOMlaxU/maxresdefault.jpg"
+                    src="https://img.youtube.com/vi/ZQF_IOMlaxU/hqdefault.jpg"
                     alt="GitHub Pages Website Tutorial"
                     loading="lazy"
+                    width="480"
+                    height="360"
                   />
                   <div class="video-highlight-overlay">
                     <i class="fa fa-play-circle"></i>
@@ -1617,7 +1640,7 @@
                     </div> -->
             <h1>I would love to hear from you.</h1>
             <div class="row">
-              <div class="col-sm-3 wow fadeInUp delay-05s">
+              <div class="col-sm-6 wow fadeInUp delay-05s">
                 <a
                   href="https://www.facebook.com/k10andsystems/"
                   class="facebook"
@@ -1627,7 +1650,7 @@
                   >Like me <i class="fa-thumbs-o-up"></i
                 ></a>
               </div>
-              <div class="col-sm-4 wow fadeInUp delay-05s">
+              <div class="col-sm-6 wow fadeInUp delay-05s">
                 <a
                   href="https://wa.link/q4oih5"
                   target="_blank"
@@ -1639,19 +1662,6 @@
                     alt="whatsapp "
                     class="img-responsive whatsapp-img"
                 /></a>
-              </div>
-              <div class="col-sm-5 wow fadeInUp delay-05s">
-                <a
-                  href="https://twitter.com/KetanAgnihotri?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
-                  data-show-count="false"
-                  >Follow @KetanAgnihotri</a
-                >
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
-                ></script>
               </div>
             </div>
             <ul class="social-link">
@@ -1707,22 +1717,6 @@
               <!--<li class="gplus"><a href="https://plus.google.com/+ketanagnihotri" target="_blank"><i class="fa-google-plus"></i></a></li>-->
               <!--<li class="twitter"><a href="https://agnihotriketan.github.io/skype.html?id=ketan.agnihotri1" target="_blank"><i class="fa-skype"></i></a></li>-->
             </ul>
-          </div>
-
-          <div class="col-lg-2 col-sm-2 wow fadeInLeft">
-            <div class="twitter-feed-container">
-              <a
-                class="twitter-timeline"
-                href="https://twitter.com/KetanAgnihotri?ref_src=twsrc%5Etfw"
-                >Tweets by KetanAgnihotri</a
-              >
-              <script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"
-                async
-              ></script>
-            </div>
           </div>
         </div>
         <hr />
@@ -1899,7 +1893,7 @@
         window,
         document,
         "script",
-        "//www.google-analytics.com/analytics.js",
+        "https://www.google-analytics.com/analytics.js",
         "ga"
       );
       ga("create", "UA-74273505-1", "auto");
