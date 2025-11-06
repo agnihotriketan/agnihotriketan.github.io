@@ -454,10 +454,12 @@
     />
 
     <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://img.youtube.com" />
     <link rel="preconnect" href="https://platform.linkedin.com" />
     <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://img.youtube.com" />
     <link rel="dns-prefetch" href="https://platform.linkedin.com" />
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
 
@@ -474,7 +476,8 @@
     
     <!-- Defer non-critical CSS -->
     <link href="css/responsive.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <noscript><link href="css/custom.css" rel="stylesheet" type="text/css" /></noscript>
 
     <!--[if IE
       ]><style type="text/css">
@@ -693,6 +696,7 @@
                   width="200"
                   height="200"
                   loading="eager"
+                  fetchpriority="high"
                 />
               </div>
             </div>
