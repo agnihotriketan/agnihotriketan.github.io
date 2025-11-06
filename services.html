@@ -190,11 +190,23 @@
     </script>
     
     <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    
+    <!-- Critical CSS - Inline for fastest render -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    
+    <!-- Preload critical font -->
+    <link rel="preload" href="css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="css/font-awesome.css" /></noscript>
+    
+    <!-- Defer non-critical CSS -->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
     
     <style>
       /* ===== Modern Unified Styling ===== */
@@ -1080,7 +1092,8 @@
         </div>
     </footer>
     
-    <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- JavaScript - Deferred for performance -->
+    <script defer type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+    <script defer type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>

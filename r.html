@@ -1,17 +1,23 @@
-<html>
+<html lang="en">
 <head>
-    <title>Your Recommendations</title>
-</head>
-<body>
-    <script type="text/javascript" src="https://platform.linkedin.com/in.js">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Recommendations - Ketan Agnihotri</title>
+    
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://platform.linkedin.com" />
+    <link rel="preconnect" href="https://ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="https://platform.linkedin.com" />
+    
+    <script async type="text/javascript" src="https://platform.linkedin.com/in.js">
         api_key: 81ob2pd0qhdgbk /*81ob2pd0qhdgbk*/ /*fd4h3VGGIj4qnhdr*/
         api_secret: fd4h3VGGIj4qnhdr
         authorize: true
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script type="IN/Login" data-onAuth="authSuccess">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script defer type="IN/Login" data-onAuth="authSuccess">
     </script>
-    <script>
+    <script defer>
 
         function authSuccess() {
             var recos_element = $("#recos");
