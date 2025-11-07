@@ -13,7 +13,39 @@
   AddOutputFilterByType DEFLATE application/x-javascript
   AddOutputFilterByType DEFLATE application/json
   AddOutputFilterByType DEFLATE application/ld+json
+  
+  # Remove browser bugs (old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
 </IfModule>
+
+# Brotli Compression (if available)
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/x-javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS application/xml application/rss+xml
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+# Enable HTTP/2 Server Push
+<IfModule mod_http2.c>
+  Protocols h2 h2c http/1.1
+  H2Push on
+  H2PushPriority * after
+  H2PushPriority text/css before
+  H2PushPriority image/jpeg after 32
+  H2PushPriority image/png after 32
+  H2PushPriority application/javascript interleaved
+  
+  <FilesMatch "\.html$">
+    Header add Link "</css/bootstrap.css>; rel=preload; as=style"
+    Header add Link "</css/style.css>; rel=preload; as=style"
+    Header add Link "</js/jquery.1.8.3.min.js>; rel=preload; as=script"
+  </FilesMatch>
+</IfModule>
+
 
 # Browser Caching - Leverage browser caching
 <IfModule mod_expires.c>
@@ -63,13 +95,33 @@
   </FilesMatch>
   
   # Security Headers
+  # Content Security Policy (CSP) - Mitigate XSS attacks
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://platform.linkedin.com https://pagead2.googlesyndication.com https://cdn.credly.com https://cdnjs.cloudflare.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: http:; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube.com https://platform.linkedin.com; object-src 'none'; base-uri 'self'; form-action 'self';"
+  
+  # HTTP Strict Transport Security (HSTS) - Force HTTPS
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+  
+  # Clickjacking protection
+  Header set X-Frame-Options "DENY"
+  
+  # MIME sniffing protection
   Header set X-Content-Type-Options "nosniff"
-  Header set X-Frame-Options "SAMEORIGIN"
+  
+  # XSS Protection
   Header set X-XSS-Protection "1; mode=block"
+  
+  # Referrer Policy
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   
-  # Permissions Policy
-  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  # Permissions Policy - Disable dangerous features
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=()"
+  
+  # Cross-Origin-Opener-Policy (COOP) - Origin isolation
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+  
+  # Remove Server signature
+  Header unset Server
+  Header unset X-Powered-By
 </IfModule>
 
 # Force HTTPS (if SSL is available)
