@@ -39,7 +39,6 @@
 ```
 agnihotriketan.github.io/
 ├── index.html              # Main portfolio page
-├── Videos.html             # Video showcase
 ├── blogs.html              # Blog integration
 ├── skype.html              # Contact page
 ├── shortcuts.html          # Reference materials
