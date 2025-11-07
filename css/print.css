@@ -1,0 +1,75 @@
+/*!
+ * Print Styles
+ * Optimized for printing portfolio pages
+ */
+
+@media print {
+  /* Reset for print */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Hide non-essential elements */
+  .social-ribbon,
+  .main-nav,
+  .res-nav_click,
+  nav,
+  footer,
+  .portfolioFilter,
+  .cert-filter-btn,
+  video,
+  iframe,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Page breaks */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  p, blockquote {
+    page-break-inside: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+    max-width: 100% !important;
+  }
+
+  /* Show links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* Print-friendly layout */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  h1 { font-size: 24pt; }
+  h2 { font-size: 18pt; }
+  h3 { font-size: 14pt; }
+  h4 { font-size: 12pt; }
+
+  /* Ensure content is visible */
+  .cert-card,
+  .portfolio-item,
+  section {
+    page-break-inside: avoid;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}

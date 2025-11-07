@@ -8,6 +8,23 @@
     font-display: swap;
 }
 
+/* Performance Optimizations for Rendering & Painting */
+.wow, .animated {
+    will-change: transform, opacity;
+}
+
+.wow.animated {
+    will-change: auto;
+}
+
+/* Optimize transforms for GPU acceleration */
+.social-ribbon,
+.main-nav,
+.res-nav_click {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
 /* ========================================
    SOCIAL MEDIA RIBBON (Top Bar) - Modern Dark UI - Compact & Sticky
    ======================================== */
@@ -40,6 +57,7 @@
     display: flex;
     align-items: center;
     animation: flagWave 2s ease-in-out infinite;
+    will-change: transform;
 }
 
 @keyframes flagWave {
