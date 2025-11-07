@@ -101,7 +101,6 @@
       content="Ketan Agnihotri - Senior Full Stack Engineer Profile Picture"
       name="twitter:image:alt"
     />
-    <!--<meta name="p:domain_verify" content="1230bac6b0e7fa1a875d8724839c2739" />-->
     <meta
       name="google-site-verification"
       content="ArBGj0UDpf3hQyQGG3X2AgtX7HutKILvB4yKkRF7WGI"
@@ -446,38 +445,60 @@
     <link rel="dns-prefetch" href="https://platform.linkedin.com" />
     <link rel="dns-prefetch" href="https://cdn.credly.com" />
 
-    <!-- Modern font loading with display swap - Inter & Space Grotesk -->
+    <!-- Modern font loading with display swap - Inter & Space Grotesk (optimized weights) -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
       type="text/css"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link rel="preconnect" href="https://img.youtube.com" />
     <link rel="preconnect" href="https://platform.linkedin.com" />
     <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
     <link rel="dns-prefetch" href="https://img.youtube.com" />
     <link rel="dns-prefetch" href="https://platform.linkedin.com" />
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
 
-    <!-- Critical CSS - Inline for fastest render -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Critical CSS - Load immediately with proper media attributes -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     
-    <!-- Preload critical font -->
-    <link rel="preload" href="css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="css/font-awesome.css" /></noscript>
+    <!-- Preload critical font with async loading -->
+    <link rel="preload" href="css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" />
+    <noscript><link rel="stylesheet" href="css/font-awesome.css" media="all" /></noscript>
     
     <!-- Critical animation CSS - Load immediately for WOW.js -->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
     
-    <!-- Defer non-critical CSS -->
+    <!-- Defer non-critical CSS with media query trick -->
     <link href="css/responsive.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />
-    <noscript><link href="css/custom.css" rel="stylesheet" type="text/css" /></noscript>
+    
+    <!-- Print-specific styles - Only for printing -->
+    <link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+    
+    <noscript>
+      <link href="css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    </noscript>
 
     <!--[if IE
       ]><style type="text/css">
@@ -487,24 +508,24 @@
       </style><!
     [endif]-->
 
-    <!-- Critical JavaScript for animations - Load blocking to ensure availability -->
+    <!-- Critical JavaScript for animations - Load with defer for better performance -->
     <script src="js/jquery.1.8.3.min.js"></script>
-    <script src="js/wow.js"></script>
     
-    <!-- Defer non-critical JavaScript -->
+    <!-- Defer all other scripts to improve initial page load -->
+    <script defer src="js/wow.js"></script>
     <script defer src="js/bootstrap.js"></script>
     <script defer src="js/jquery-scrolltofixed.js"></script>
     <script defer src="js/jquery.easing.1.3.js"></script>
     <script defer src="js/jquery.isotope.js"></script>
-    <script defer src="js/classie.js"></script>
-
+    
     <!--[if lt IE 9]>
       <script src="js/respond-1.1.0.min.js"></script>
       <script src="js/html5shiv.js"></script>
       <script src="js/html5element.js"></script>
     <![endif]-->
-
-    <!-- Async third-party scripts -->
+    
+    <!-- Initialize after all deferred scripts load -->
+    <script defer src="js/init.js"></script>    <!-- Async third-party scripts -->
     <script
       async
       defer
@@ -1561,199 +1582,7 @@
         </div>
       </div>
     </section>
-
-    <section class="business-talking" style="display: none">
-      <div class="container">
-        <h2>Let’s Talk Business, Technology or Cricket</h2>
-      </div>
-    </section>
     <div class="container">
-      <section
-        class="main-section contact"
-        id="contact-old"
-        style="display: none"
-      >
-        <hr />
-        <div class="row">
-          <div class="col-lg-5 col-sm-5 wow fadeInLeft">
-            <div class="contact-info-box address clearfix">
-              <h3><i class="icon-map-marker"></i>Address:</h3>
-              <span> Dubai, UAE </span>
-            </div>
-            <div class="contact-info-box phone clearfix">
-              <h3><i class="fa-phone"></i>India :</h3>
-              <a
-                href="https://wa.link/q4oih5"
-                target="_blank"
-                rel="noopener"
-                aria-label="Contact me on WhatsApp India number"
-                >+91 7276385155</a
-              >
-            </div>
-            <div class="contact-info-box phone clearfix">
-              <h3><i class="fa-phone"></i>UAE :</h3>
-              <a
-                href="https://wa.link/yonruk"
-                target="_blank"
-                rel="noopener"
-                aria-label="Contact me on WhatsApp UAE number"
-                >+971 55 628 9583</a
-              >
-            </div>
-            <div class="contact-info-box email clearfix">
-              <h3><i class="fa-pencil"></i>Email:</h3>
-              <a
-                href="mailto:agnihotriketan@gmail.com?subject=Hi Ketan&body=I would like to connect with you."
-                aria-label="Send email to Ketan Agnihotri"
-                >agnihotriketan@gmail.com</a
-              >
-            </div>
-            <div class="contact-info-box hours clearfix">
-              <h3><i class="fa-clock-o"></i>Hours:</h3>
-              <span
-                ><strong>365 * 24 * 7</strong>
-                <!--6am - 10pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.--></span
-              >
-            </div>
-
-            <div class="contact-info-box hours clearfix">
-              <h3><i class="fa-calendar"></i>Calendly:</h3>
-              <span>
-                <strong>
-                  <a
-                    href="https://calendly.com/agnihotriketan"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Schedule a meeting on Calendly"
-                    >https://calendly.com/agnihotriketan</a
-                  >
-                </strong>
-              </span>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-4 wow fadeInUp delay-05s">
-            <!--<div class="form">
-                      <input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                      <input class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                      <textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                      <input class="input-btn" type="submit" value="send message">
-                    </div> -->
-            <h1>I would love to hear from you.</h1>
-            <div class="row">
-              <div class="col-sm-6 wow fadeInUp delay-05s">
-                <a
-                  href="https://www.facebook.com/k10andsystems/"
-                  class="facebook"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Like K10 & Systems on Facebook"
-                  >Like me <i class="fa-thumbs-o-up"></i
-                ></a>
-              </div>
-              <div class="col-sm-6 wow fadeInUp delay-05s">
-                <a
-                  href="https://wa.link/q4oih5"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Contact me on WhatsApp"
-                >
-                  <img
-                    src="img/WhatsApp.png"
-                    alt="whatsapp "
-                    class="img-responsive whatsapp-img"
-                /></a>
-              </div>
-            </div>
-            <ul class="social-link">
-              <!--<li class="twitter"><a href="https://twitter.com/KetanAgnihotri" target="_blank"><i class="fa-twitter"></i></a></li>-->
-
-              <li class="twitter">
-                <a
-                  target="_blank"
-                  rel="noopener"
-                  title="Subscribe me on Youtube"
-                  class="text-red"
-                  href="https://www.youtube.com/c/ketanagnihotri?sub_confirmation=1"
-                  aria-label="Subscribe to my YouTube channel"
-                  ><i class="fa fa-youtube-play"></i
-                ></a>
-              </li>
-              <li class="twitter">
-                <a
-                  href="https://github.com/agnihotriketan"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Visit my GitHub profile"
-                  ><i class="fa-github"></i
-                ></a>
-              </li>
-              <li class="facebook">
-                <a
-                  href="https://www.facebook.com/k10Agnihotri"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Visit my Facebook page"
-                  ><i class="fa-facebook"></i
-                ></a>
-              </li>
-              <li class="facebook">
-                <a
-                  href="https://www.linkedin.com/in/ketanagnihotri"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Visit my LinkedIn profile"
-                  ><i class="fa-linkedin"></i
-                ></a>
-              </li>
-              <li class="pinterest">
-                <a
-                  href="https://in.pinterest.com/agnihotriketan/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Visit my Pinterest profile"
-                  ><i class="fa-pinterest"></i
-                ></a>
-              </li>
-              <!--<li class="gplus"><a href="https://plus.google.com/+ketanagnihotri" target="_blank"><i class="fa-google-plus"></i></a></li>-->
-              <!--<li class="twitter"><a href="https://agnihotriketan.github.io/skype.html?id=ketan.agnihotri1" target="_blank"><i class="fa-skype"></i></a></li>-->
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <!--<div class="row">-->
-        <!-- <div class="col-lg-1 col-sm-1 wow fadeInLeft"></div> -->
-        <!--<div class="col-lg-3 col-sm-3 wow fadeInLeft">
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLg8W9iHZsdlQET1FnH6UJUDzvqkBeWotC" frameborder="0" allowfullscreen></iframe>
-              <h4>Developing Advance WebApp using ASP.NET MVC 5, WebApi</h4>
-            </div>-->
-        <!--<div class="col-lg-3 col-sm-3 wow fadeInLeft">
-                    <iframe src="https://www.youtube.com/embed/WuUivOtb9ps" allowfullscreen></iframe>
-                    <h4>Power BI reports with Azure DevOps [i.e. VSTS] in 10 minutes</h4>
-                </div>
-                <div class="col-lg-3 col-sm-3 wow fadeInLeft">
-                    <iframe src="https://www.youtube.com/embed/uPw3BYkBL8w" allowfullscreen></iframe>
-                    <h4>Plan, Code Together, Ship Faster | Azure DevOps (VSTS)</h4>
-                </div>
-
-                <div class="col-lg-1 col-sm-1 wow fadeInLeft">
-                    <span> </span>
-                </div>
-                <div class="col-lg-5 col-sm-5 wow fadeInLeft">
-                    <h3>Contact me to become An Expert : Full Stack Developer | Azure Developer </h3><hr />
-                    <a class="link animated fadeInUp delay-1s" download href="Developing ASP.NET MVC 5 Advance Web Applications.docx" title="Click to download MVC Training Course Content"><i class="fa fa-file-code-o"></i> See MVC Training Course Content</a>
-                    <hr />
-                    <a target="_blank" title="Click here to watch on Youtube" class="text-red" href="https://www.youtube.com/c/ketanagnihotri?sub_confirmation=1">Click here to subscribe me on YouTube. <i class="fa fa-youtube-play fa-3x"></i></a>
-                    <hr />  <a href="https://www.antwak.com/author/1908-ketan-agnihotri" target="_blank">Follow me on antwak</a>
-                    <hr />  <a href="https://www.scaler.com/academy/mentor/profile/3f0d2842bbad/" target="_blank">Mentor @Scaler</a>
-
-                </div>
-            </div>-->
-        <!--<div class="row">
-                <div class="col-lg-12 col-sm-12 wow fadeInLeft">
-                    <a href="https://www.antwak.com/author/1908-ketan-agnihotri" target="_blank">Follow me on antwak</a>
-                </div>
-            </div>-->
-      </section>
     </div>
     <footer class="footer">
       <div class="container">
@@ -1767,138 +1596,13 @@
       </div>
     </footer>
 
-    <script type="text/javascript">
-      $(document).ready(function (e) {
-        $("#test").scrollToFixed();
-        $(".res-nav_click").click(function () {
-          $(".main-nav").slideToggle();
-          return false;
-        });
-      });
-
-      wow = new WOW({
-        animateClass: "animated",
-        offset: 100,
-      });
-      wow.init();
-
-      $(window).load(function () {
-        $(".main-nav li a").bind("click", function (event) {
-          var $anchor = $(this);
-
-          $("html, body")
-            .stop()
-            .animate(
-              {
-                scrollTop: $($anchor.attr("href")).offset().top - 60,
-              },
-              1500,
-              "easeInOutExpo"
-            );
-          /*
-                if you don't want to use the easing effects:
-                $('html, body').stop().animate({
-                  scrollTop: $($anchor.attr('href')).offset().top
-                }, 1000);
-                */
-          event.preventDefault();
-        });
-      });
-
-      $(window).load(function () {
-        var $container = $(".portfolioContainer"),
-          $body = $("body"),
-          colW = 375,
-          columns = null;
-
-        $container.isotope({
-          // disable window resizing
-          resizable: true,
-          masonry: { columnWidth: colW },
-        });
-
-        $(window)
-          .smartresize(function () {
-            var currentColumns = Math.floor(($body.width() - 30) / colW);
-            if (currentColumns !== columns) {
-              columns = currentColumns;
-              $container.width(columns * colW).isotope("reLayout");
-            }
-          })
-          .smartresize();
-        $(".portfolioFilter a").click(function () {
-          $(".portfolioFilter .current").removeClass("current");
-          $(this).addClass("current");
-
-          var selector = $(this).attr("data-filter");
-          $container.isotope({ filter: selector });
-          return false;
-        });
-      });
-
-      // Certification Filter Functionality
-      $(document).ready(function () {
-        // Filter button click handler
-        $(".cert-filter-btn").on("click", function () {
-          // Remove active class from all buttons
-          $(".cert-filter-btn").removeClass("active");
-          // Add active class to clicked button
-          $(this).addClass("active");
-
-          var filter = $(this).data("filter");
-
-          if (filter === "*") {
-            // Show all certification cards with fade animation
-            $(".cert-card")
-              .fadeOut(300, function () {
-                $(this).show().css("display", "flex");
-              })
-              .fadeIn(300);
-          } else {
-            // Hide all cards first
-            $(".cert-card").fadeOut(300, function () {
-              // Show only matching cards
-              $(filter).fadeIn(300, function () {
-                $(this).css("display", "flex");
-              });
-            });
-          }
-        });
-
-        // Add data-delay attributes dynamically for WOW animations
-        $(".cert-card").each(function (index) {
-          $(this).attr("data-wow-delay", index * 0.05 + "s");
-        });
-
-        // Re-initialize WOW.js for new elements
-        if (typeof WOW !== "undefined") {
-          new WOW().init();
-        }
-      });
-    </script>
+    <!-- Google Analytics - Optimized async loading -->
     <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
-      ga("create", "UA-74273505-1", "auto");
-      ga("send", "pageview");
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-74273505-1', 'auto');
+      ga('send', 'pageview');
     </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
     <!--  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     Ad2
     <ins class="adsbygoogle ad-display-block"

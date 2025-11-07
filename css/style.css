@@ -80,15 +80,13 @@ a:active {
 
 @font-face {
   font-family: "FontAwesome";
-  src: url("../fonts/fontawesome-webfont.eot?v=4.1.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0")
-      format("embedded-opentype"),
+  /* WOFF2 format is 30% smaller - try CDN first, then local fallback */
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
     url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"),
-    url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"),
-    url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular")
-      format("svg");
+    url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Primary Styles
@@ -397,18 +395,6 @@ p {
 
 .featured-box-col2 {
   overflow: hidden;
-}
-
-.featured-box.magic {
-  background: url(../img/magic.png) left top no-repeat;
-}
-
-.featured-box.packaged {
-  background: url(../img/packaged.png) left top no-repeat;
-}
-
-.featured-box.seo {
-  background: url(../img/seo.png) left top no-repeat;
 }
 
 .Learn-More {
